@@ -1,6 +1,7 @@
 package src;
 
 import java.util.LinkedList;
+import java.util.ArrayList;
 
 class Block{
 	int length;
@@ -11,7 +12,7 @@ class Block{
     boolean priority;
 	
     public Block (int length, int width) {
-		if (length < 0 || width < 0) {
+		if (length <= 0 || width <= 0) {
 			throw new IllegalArgumentException("Length and width must be greater than 0");
 		}
 		this.length = length;
@@ -34,9 +35,17 @@ class Block{
     }
     
     public int hashCode() {
-    	int dim = length + width * 10;
-    	int coord = upLCrow + upLCcol*10;
-    	return (dim * (dim + coord) >> 1) ^ (dim * (dim + coord) << 2);
+    	int hashCode = 1;
+    	ArrayList<Integer> holder = new ArrayList<Integer>(4);
+    	holder.add(new Integer(upLCrow));
+    	holder.add(new Integer(upLCcol));
+    	holder.add(new Integer(length));
+    	holder.add(new Integer(width));
+    	for(int i = 0; i < 4; i++) {
+		      Integer x = holder.get(i);
+		      hashCode = 31*hashCode + (x==null ? 0 : x.hashCode());
+		}
+    	return hashCode;
     }
       
     public boolean equals(Object other){
@@ -65,5 +74,16 @@ class Block{
     		toRtn += i;
     	}
     	return toRtn;
+    }
+    
+    public static void main(String[] args) {
+    	Block test = new Block(1,1);
+    	test.upLCrow = 0;
+    	test.upLCcol = 1;
+    	Block test2 = new Block(1,1);
+    	test2.upLCrow = 1;
+    	test2.upLCcol = 0;
+    	System.out.println(test.hashCode() == test2.hashCode());
+    	System.out.println(test.equals(test2));
     }
 }
