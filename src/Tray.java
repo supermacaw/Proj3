@@ -28,7 +28,7 @@ public class Tray {
         this.config = new Block[otherTray.lengthOfTray][otherTray.widthOfTray];
         this.history = new ArrayList<String> (otherTray.history);
         this.blocksOnTray = new HashSet<Block> ();
-        this.cost = otherTray.cost;
+        this.cost = 100000000;
         Iterator<Block> i = otherTray.blocksOnTray.iterator();
 		while (i.hasNext()) {
 			Block temp = new Block(i.next());
@@ -166,7 +166,7 @@ public class Tray {
 						toSet += maxOwnage/(GBlen*GBwid);
 					}
 					else if (cell == null) { //if goal cell is empty, it's more desirable
-						toSet += maxOwnage/(GBlen*GBwid)/2;
+						toSet += (maxOwnage/(GBlen*GBwid))/2;
 					}
 					else { //if a goal cell is not empty and is filled with a matching block, it's very desirable
 						toSet -= 2*(maxOwnage/(GBlen*GBwid));
@@ -281,6 +281,14 @@ public class Tray {
 		return true;
 	}
 	
+	public int compress() {
+		int toRtn = 0;
+		for (Block b : blocksOnTray) {
+			toRtn = toRtn*19 + (b.hashCode());
+		}
+		return toRtn;
+	}
+	
 	boolean isOK() {
 		HashMap<Block, Integer> counts = new HashMap<Block, Integer>();
 		for (int m = 0; m < this.lengthOfTray; m++) {
@@ -324,9 +332,11 @@ public class Tray {
 		}
 		for(int i = 0; i < this.lengthOfTray; i++){
 			for(int j = 0; j < this.widthOfTray; j++){
-				if(otherTray.config[i][j]!=null && this.config[i][j]!=null){
-					return otherTray.config[i][j].equals(this.config[i][j]);
-				}else if(otherTray.config[i][j] == null ^ this.config[i][j]==null){
+				if(otherTray.config[i][j] != null && this.config[i][j]!=null){
+					if (!otherTray.config[i][j].equals(this.config[i][j])) {
+						return false;
+					}
+				}else if((otherTray.config[i][j] == null) ^ (this.config[i][j]==null)){
 					return false;
 				}
 			}

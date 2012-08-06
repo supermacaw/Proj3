@@ -3,6 +3,7 @@ package src;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Iterator;
 
 //check hashcodes later and equals methods
 
@@ -16,58 +17,34 @@ public class Solver {
 		seen = new HashSet<Tray>();
         stack = new LinkedList<Tray> (); //Make this sorted by cost.
 	}
-	
-/*	private int getDir(Block blockToCheck, int row, int col, Tray myTray){
-		if(!myTray.inBounds(row, col)){
-			throw new IllegalArgumentException();
-		}
-		else if(blockToCheck.upLCrow < row){
-			return 0;
-		}else if(blockToCheck.upLCrow > row){
-			return 1;
-		}else if(blockToCheck.upLCcol < col){
-			return 2;
-		}else if(blockToCheck.upLCcol > col){
-			return 3;
-		}else if(blockToCheck.upLCrow == row && blockToCheck.upLCcol == col){
-			return -1;
-		}else{
-			throw new IllegalArgumentException();
-		}
-	}
-	
-	public boolean getDirWorks(){
-		Tray myTray = new Tray(5,5);
-		Block myBlock = new Block(2,2);
-		myTray.place(myBlock, 2, 2);
-		if(getDir(myBlock, 0, 0, myTray)!=1){
-			return false;
-		}if(getDir(myBlock, 3, 0, myTray)!=0){
-			return false;
-		}if(getDir(myBlock, 2, 0, myTray)!=3){
-			return false;
-		}if(getDir(myBlock, 2, 4, myTray)!=2){
-			return false;
-		}if(getDir(myBlock, 2, 2, myTray)!=(-1)){
-			return false;
-		}try{
-			getDir(myBlock, 19, 19, myTray);
-			return false;
-		}catch(Exception e){
-		}
-		return true;
-	}*/
 
 	private void solve() {
-        while (!stack.isEmpty()) {
+		int step=1;
+		int collisions = 0;
+		int hashCollisions = 0;
+		HashSet<Integer> hashes = new HashSet<Integer>();
+		
+        while (!stack.isEmpty() && step < 300) {
+            //System.out.println("last " + stack.getLast().cost);
             Tray myTray = stack.pop();
-            //System.out.println(myTray);
+            //System.out.println(myTray.cost);
+            step+=1;
+	            System.out.println("hashset size: " + seen.size() + " collisions: " + hashCollisions + " " + step + " hash: " + myTray.hashCode() + " size: " + stack.size() + " numMoves : " + myTray.history.size());
+	            System.out.println(myTray);
+	            if(hashes.contains(new Integer(myTray.hashCode()))){
+	            	hashCollisions+=1;
+	            }
+	            else{
+	            	hashes.add(new Integer(myTray.hashCode()));
+	            }
+	            
+            //System.out.println(stack.size());
             if(myTray.isAtGoal(goalBlocks)){
-                for(int i = 0; i < myTray.history.size(); i++){
-                    System.out.println(i + " " + myTray.history.get(i));
-                }
-                System.exit(0);
-                return;
+            	for(int i = 0; i < myTray.history.size(); i++){
+            		System.out.println(i + " " + myTray.history.get(i));
+            	}
+            	System.exit(0);
+            	return;
             }
             myTray.populateNextMoves(goalBlocks);
             seen.add(myTray);
@@ -151,6 +128,86 @@ public class Solver {
 	                    break;
                 	}
                 }
+            	for (Integer i : toMove.directions) {
+            		switch (i) {
+            		case 0: 
+            			//System.out.println("Down " + toMove);
+            			Tray one = new Tray(myTray);
+            			Block copy1 = one.config[rCoor][cCoor];
+            			one.move(copy1, rCoor + 1, cCoor);
+            			one.calculateCost(goalBlocks);
+            			if(!seen.contains(one)) {
+            				this.push(one);
+            				seen.add(one);
+            				one.history.add(copy1.length + " " 
+            						+ copy1.width + " "
+            						+ copy1.upLCrow + " "
+            						+ copy1.upLCcol);
+            			}
+            			else {
+            				//System.out.println("Just jumped to a previous configuration or different moving option");
+            				//System.out.println("");
+            			}
+            			break;
+            		case 1:
+            			//System.out.println("Up " + toMove);
+            			Tray two = new Tray(myTray);
+            			Block copy2 = two.config[rCoor][cCoor];
+            			two.move(copy2, rCoor-1, cCoor);
+            			two.calculateCost(goalBlocks);
+            			if(!seen.contains(two)){	
+            				this.push(two);
+            				seen.add(two);
+            				two.history.add(copy2.length + " "
+            						+ copy2.width + " " 
+            						+ copy2.upLCrow + " " 
+            						+ copy2.upLCcol);
+            			}
+            			else {
+            				//System.out.println("Just jumped to a previous configuration or different moving option");
+            				//System.out.println("");
+            			}
+            			break;
+            		case 2:
+            			//System.out.println("Right " + toMove);
+            			Tray three = new Tray(myTray);
+            			Block copy3 = three.config[rCoor][cCoor];
+            			three.move(copy3, rCoor, cCoor + 1);
+            			three.calculateCost(goalBlocks);
+            			if(!seen.contains(three)){	
+            				this.push(three);
+            				seen.add(three);
+            				three.history.add(copy3.length + " " 
+            						+ copy3.width + " " 
+            						+ copy3.upLCrow + " " 
+            						+ copy3.upLCcol);
+            			}
+            			else {
+            				//System.out.println("");
+            				//System.out.println("Just jumped to a previous configuration or different moving option");
+            			}
+            			break;
+            		case 3:
+            			//System.out.println("Left " + toMove);
+            			Tray four = new Tray(myTray);
+            			Block copy4 = four.config[rCoor][cCoor];
+            			four.move(copy4, rCoor, cCoor - 1);
+            			four.calculateCost(goalBlocks);
+            			if(!seen.contains(four)){
+            				this.push(four);
+            				seen.add(four);
+            				four.history.add(copy4.length + " " 
+            						+ copy4.width + " " 
+            						+ copy4.upLCrow + " " 
+            						+ copy4.upLCcol);
+            			}
+            			else {
+            				//System.out.println("Just jumped to a previous configuration or different moving option");
+            				//System.out.println("");
+            			}
+            			break;
+            		}
+            	}
             }
         }
         System.out.println("got here :(");
@@ -205,19 +262,20 @@ public class Solver {
 		this.goalBlocks.add(blockToAdd);
 	}
 	
-    /* This method mantains the order of the Trays */
+    /* This method maintains the order of the Trays */
 	public void push (Tray t) {
-        int index = this.stack.size() - 1;
+        int index = 0;
+        //Iterator itr = stack.descendingIterator();
         for (Tray comp : stack) {
+        //	Tray comp = (Tray) itr.next();
             if (t.compareTo(comp) == 1) {
-                index -= 1;
+                index += 1;
             } else if (t.compareTo(comp) <= 0) {
-                stack.add(index + 1, t);
+                stack.add(index, t);
                 return;
             }
-            index += 1;
         }
-        stack.addFirst(t);
+        stack.add(t);
 	}
 
 	public static void main(String[] args) {
@@ -272,4 +330,45 @@ public class Solver {
 		}
 		return toRtn;
 	}
+	
+	/*	private int getDir(Block blockToCheck, int row, int col, Tray myTray){
+	if(!myTray.inBounds(row, col)){
+		throw new IllegalArgumentException();
+	}
+	else if(blockToCheck.upLCrow < row){
+		return 0;
+	}else if(blockToCheck.upLCrow > row){
+		return 1;
+	}else if(blockToCheck.upLCcol < col){
+		return 2;
+	}else if(blockToCheck.upLCcol > col){
+		return 3;
+	}else if(blockToCheck.upLCrow == row && blockToCheck.upLCcol == col){
+		return -1;
+	}else{
+		throw new IllegalArgumentException();
+	}
+}
+
+public boolean getDirWorks(){
+	Tray myTray = new Tray(5,5);
+	Block myBlock = new Block(2,2);
+	myTray.place(myBlock, 2, 2);
+	if(getDir(myBlock, 0, 0, myTray)!=1){
+		return false;
+	}if(getDir(myBlock, 3, 0, myTray)!=0){
+		return false;
+	}if(getDir(myBlock, 2, 0, myTray)!=3){
+		return false;
+	}if(getDir(myBlock, 2, 4, myTray)!=2){
+		return false;
+	}if(getDir(myBlock, 2, 2, myTray)!=(-1)){
+		return false;
+	}try{
+		getDir(myBlock, 19, 19, myTray);
+		return false;
+	}catch(Exception e){
+	}
+	return true;
+}*/
 }

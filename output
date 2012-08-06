@@ -1,0 +1,2094 @@
+hashset size: 0 collisions: 0 2 hash: -399966556 size: 0 numMoves : 0
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 2.1 X   
+1.2 1.2 2.1 1.1 
+1.2 1.2 1.1 1.1 
+hashset size: 2 collisions: 0 3 hash: -118280865 size: 1 numMoves : 1
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 2.1 X   
+1.2 1.2 2.1 1.1 
+1.2 1.2 1.1 1.1 
+hashset size: 4 collisions: 0 4 hash: -539937050 size: 2 numMoves : 2
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 X   
+1.2 1.2 1.1 1.1 
+hashset size: 6 collisions: 0 5 hash: 1500138397 size: 3 numMoves : 3
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 1.1 X   
+hashset size: 8 collisions: 0 6 hash: 1555915264 size: 4 numMoves : 4
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 X   1.1 
+hashset size: 11 collisions: 0 7 hash: -609531489 size: 6 numMoves : 5
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 X   1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 14 collisions: 0 8 hash: 21783112 size: 8 numMoves : 6
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 1.1 X   
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 16 collisions: 0 9 hash: -1425232197 size: 9 numMoves : 7
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 1.1 1.1 
+1.2 1.2 2.1 X   
+1.2 1.2 2.1 1.1 
+hashset size: 19 collisions: 0 10 hash: -498797412 size: 11 numMoves : 8
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 1.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 X   
+hashset size: 20 collisions: 0 11 hash: 1843804036 size: 11 numMoves : 8
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 1.1 X   
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 22 collisions: 0 12 hash: -1763535366 size: 12 numMoves : 6
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+X   1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 24 collisions: 0 13 hash: 943922285 size: 13 numMoves : 7
+
+X   1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+2.1 1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 27 collisions: 0 14 hash: -1874329986 size: 15 numMoves : 8
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+X   1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 29 collisions: 0 15 hash: -498736869 size: 16 numMoves : 9
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 X   1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 32 collisions: 0 16 hash: 882117188 size: 18 numMoves : 10
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 1.1 X   
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 34 collisions: 0 17 hash: 2009401023 size: 19 numMoves : 11
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 1.1 1.1 
+1.2 1.2 2.1 X   
+1.2 1.2 2.1 1.1 
+hashset size: 37 collisions: 0 18 hash: -609592032 size: 21 numMoves : 12
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 1.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 X   
+hashset size: 38 collisions: 0 19 hash: -1590829184 size: 21 numMoves : 12
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 1.1 X   
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 40 collisions: 0 20 hash: -3322409 size: 22 numMoves : 13
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 X   1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 43 collisions: 0 21 hash: 1989014202 size: 24 numMoves : 14
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+X   1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 45 collisions: 0 22 hash: -1258911703 size: 25 numMoves : 15
+
+X   1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+2.1 1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 47 collisions: 0 23 hash: -114117029 size: 26 numMoves : 9
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 X   1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 50 collisions: 0 24 hash: 2099808822 size: 28 numMoves : 10
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+X   1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 51 collisions: 0 25 hash: 216283005 size: 28 numMoves : 5
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+X   1.2 1.2 1.1 
+hashset size: 52 collisions: 0 26 hash: 1732052799 size: 28 numMoves : 13
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 1.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 X   
+hashset size: 52 collisions: 0 27 hash: 1621258179 size: 27 numMoves : 9
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 1.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 X   
+hashset size: 52 collisions: 0 28 hash: -832574404 size: 26 numMoves : 12
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 1.1 1.1 
+1.2 1.2 2.1 X   
+1.2 1.2 2.1 1.1 
+hashset size: 53 collisions: 0 29 hash: 1300429691 size: 26 numMoves : 13
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 1.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 X   
+hashset size: 54 collisions: 0 30 hash: -114177572 size: 26 numMoves : 14
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 1.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 X   
+hashset size: 54 collisions: 0 31 hash: -1692908480 size: 25 numMoves : 8
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 1.1 1.1 
+1.2 1.2 2.1 X   
+1.2 1.2 2.1 1.1 
+hashset size: 55 collisions: 0 32 hash: 1189635071 size: 25 numMoves : 9
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 1.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 X   
+hashset size: 56 collisions: 0 33 hash: -3382952 size: 25 numMoves : 10
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 1.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 X   
+hashset size: 56 collisions: 0 34 hash: 1060500804 size: 24 numMoves : 10
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 X   1.1 
+hashset size: 59 collisions: 0 35 hash: 711697465 size: 26 numMoves : 11
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+X   1.2 1.2 1.1 
+hashset size: 60 collisions: 0 36 hash: 1920834880 size: 26 numMoves : 14
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 X   1.1 
+hashset size: 62 collisions: 0 37 hash: -1878717956 size: 27 numMoves : 10
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 X   1.1 
+hashset size: 64 collisions: 0 38 hash: -2014283455 size: 28 numMoves : 13
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 1.1 X   
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 64 collisions: 0 39 hash: 1785269381 size: 27 numMoves : 11
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 1.1 X   
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 64 collisions: 0 40 hash: -1153949379 size: 26 numMoves : 9
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 1.1 X   
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 64 collisions: 0 41 hash: -1649363839 size: 25 numMoves : 7
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 1.1 X   
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 64 collisions: 0 42 hash: 1703084991 size: 24 numMoves : 11
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+X   1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 65 collisions: 0 43 hash: 288984772 size: 24 numMoves : 12
+
+X   X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+2.1 1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 66 collisions: 0 44 hash: 1402175363 size: 24 numMoves : 13
+
+X   1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+2.1 1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 68 collisions: 0 45 hash: 2114136580 size: 25 numMoves : 14
+
+X   X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+2.1 1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 69 collisions: 0 46 hash: 957953791 size: 25 numMoves : 15
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+X   1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 69 collisions: 0 47 hash: 480256350 size: 24 numMoves : 16
+
+X   X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+2.1 1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 69 collisions: 0 48 hash: 1813879611 size: 23 numMoves : 15
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+X   1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 69 collisions: 0 49 hash: -278253697 size: 22 numMoves : 9
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+X   1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 70 collisions: 0 50 hash: 1187756936 size: 22 numMoves : 10
+
+X   X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+2.1 1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 71 collisions: 0 51 hash: -689957945 size: 22 numMoves : 11
+
+X   1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+2.1 1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 73 collisions: 0 52 hash: -1282058552 size: 23 numMoves : 12
+
+X   X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+2.1 1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 74 collisions: 0 53 hash: -1134179517 size: 23 numMoves : 13
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+X   1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 74 collisions: 0 54 hash: 1379028514 size: 22 numMoves : 8
+
+X   X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+2.1 1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 74 collisions: 0 55 hash: -389048317 size: 21 numMoves : 7
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+X   1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 74 collisions: 0 56 hash: 1300490234 size: 20 numMoves : 10
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 X   1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 74 collisions: 0 57 hash: 1189695614 size: 19 numMoves : 14
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 X   1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 75 collisions: 0 58 hash: 1068748411 size: 19 numMoves : 15
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+X   1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 75 collisions: 0 59 hash: 1621318722 size: 18 numMoves : 10
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 X   1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 76 collisions: 0 60 hash: -1023384897 size: 18 numMoves : 11
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+X   1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 76 collisions: 0 61 hash: 1732113342 size: 17 numMoves : 6
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 X   1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 76 collisions: 0 62 hash: 2045889884 size: 16 numMoves : 12
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+X   1.2 1.2 1.1 
+hashset size: 76 collisions: 0 63 hash: -1817454304 size: 15 numMoves : 6
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+X   1.2 1.2 1.1 
+hashset size: 76 collisions: 0 64 hash: 1610933017 size: 14 numMoves : 11
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 1.1 X   
+hashset size: 78 collisions: 0 65 hash: 2042556125 size: 15 numMoves : 15
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 1.1 X   
+hashset size: 79 collisions: 0 66 hash: 1931761505 size: 15 numMoves : 11
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 1.1 X   
+hashset size: 80 collisions: 0 67 hash: 2017260733 size: 15 numMoves : 11
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 X   1.1 
+hashset size: 80 collisions: 0 68 hash: -1846083455 size: 14 numMoves : 15
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 X   1.1 
+hashset size: 80 collisions: 0 69 hash: -985749379 size: 13 numMoves : 11
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 X   1.1 
+hashset size: 80 collisions: 0 70 hash: -1417372487 size: 12 numMoves : 5
+
+2.1 X   2.2 2.2 
+2.1 1.1 2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 X   1.1 
+hashset size: 80 collisions: 0 71 hash: 320397026 size: 11 numMoves : 12
+
+2.1 1.1 2.2 2.2 
+2.1 X   2.2 2.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 X   
+1.2 1.2 1.1 1.1 
+hashset size: 82 collisions: 0 72 hash: 402203492 size: 12 numMoves : 12
+
+1.1 X   2.2 2.2 
+2.1 X   2.2 2.2 
+2.1 1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 83 collisions: 0 73 hash: 1815894683 size: 12 numMoves : 13
+
+1.1 2.2 2.2 X   
+2.1 2.2 2.2 X   
+2.1 1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 84 collisions: 0 74 hash: 582044386 size: 12 numMoves : 14
+
+1.1 2.2 2.2 X   
+2.1 2.2 2.2 1.1 
+2.1 1.2 1.2 X   
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 87 collisions: 0 75 hash: 967366045 size: 14 numMoves : 15
+
+1.1 2.2 2.2 X   
+2.1 2.2 2.2 1.1 
+2.1 1.2 1.2 1.1 
+1.2 1.2 2.1 X   
+1.2 1.2 2.1 1.1 
+hashset size: 89 collisions: 0 76 hash: -845281756 size: 15 numMoves : 16
+
+1.1 2.2 2.2 X   
+2.1 2.2 2.2 1.1 
+2.1 1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 X   
+hashset size: 90 collisions: 0 77 hash: -2071565341 size: 15 numMoves : 15
+
+1.1 2.2 2.2 X   
+2.1 2.2 2.2 1.1 
+2.1 X   1.2 1.2 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 1.1 
+hashset size: 91 collisions: 0 78 hash: 1899984829 size: 15 numMoves : 17
+
+1.1 2.2 2.2 1.1 
+2.1 2.2 2.2 X   
+2.1 1.2 1.2 1.1 
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 X   
+hashset size: 92 collisions: 0 79 hash: -1103447194 size: 15 numMoves : 18
+
+1.1 2.2 2.2 1.1 
+2.1 2.2 2.2 1.1 
+2.1 1.2 1.2 X   
+1.2 1.2 2.1 1.1 
+1.2 1.2 2.1 X   
+hashset size: 95 collisions: 0 80 hash: -759872863 size: 17 numMoves : 19
+
+1.1 2.2 2.2 1.1 
+2.1 2.2 2.2 1.1 
+2.1 1.2 1.2 1.1 
+1.2 1.2 2.1 X   
+1.2 1.2 2.1 X   
+hashset size: 96 collisions: 0 81 hash: 942586982 size: 17 numMoves : 20
+
+1.1 2.2 2.2 1.1 
+2.1 2.2 2.2 1.1 
+2.1 1.2 1.2 1.1 
+1.2 1.2 X   2.1 
+1.2 1.2 X   2.1 
+hashset size: 98 collisions: 0 82 hash: 1775769131 size: 18 numMoves : 21
+
+1.1 2.2 2.2 1.1 
+2.1 2.2 2.2 1.1 
+2.1 1.2 1.2 1.1 
+X   1.2 1.2 2.1 
+1.2 1.2 X   2.1 
+hashset size: 101 collisions: 0 83 hash: 1967052068 size: 20 numMoves : 22
+
+1.1 2.2 2.2 1.1 
+2.1 2.2 2.2 1.1 
+2.1 1.2 1.2 1.1 
+X   1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 102 collisions: 0 84 hash: 206614977 size: 20 numMoves : 21
+
+1.1 2.2 2.2 1.1 
+2.1 2.2 2.2 1.1 
+2.1 1.2 1.2 1.1 
+1.2 1.2 X   2.1 
+X   1.2 1.2 2.1 
+hashset size: 102 collisions: 0 85 hash: 1202289257 size: 19 numMoves : 23
+
+1.1 2.2 2.2 1.1 
+X   2.2 2.2 1.1 
+2.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 104 collisions: 0 86 hash: 1314929958 size: 20 numMoves : 24
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+2.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 106 collisions: 0 87 hash: 1495499103 size: 21 numMoves : 25
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+X   1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 109 collisions: 0 88 hash: -1985738240 size: 23 numMoves : 26
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+1.2 1.2 X   1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 111 collisions: 0 89 hash: -1935037087 size: 24 numMoves : 27
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+1.2 1.2 1.1 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 114 collisions: 0 90 hash: 714776480 size: 26 numMoves : 28
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+1.2 1.2 1.1 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 116 collisions: 0 91 hash: -1984758020 size: 27 numMoves : 28
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 X   
+1.2 1.2 1.1 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 118 collisions: 0 92 hash: -1233972509 size: 28 numMoves : 29
+
+X   2.2 2.2 X   
+1.1 2.2 2.2 1.1 
+1.2 1.2 1.1 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 119 collisions: 0 93 hash: 381999070 size: 28 numMoves : 30
+
+1.1 2.2 2.2 X   
+X   2.2 2.2 1.1 
+1.2 1.2 1.1 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 120 collisions: 0 94 hash: -1234058999 size: 28 numMoves : 31
+
+X   2.2 2.2 X   
+1.1 2.2 2.2 1.1 
+1.2 1.2 1.1 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 120 collisions: 0 95 hash: -1204894526 size: 27 numMoves : 26
+
+X   2.2 2.2 1.1 
+X   2.2 2.2 1.1 
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 122 collisions: 0 96 hash: 1495412613 size: 28 numMoves : 27
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+X   1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 124 collisions: 0 97 hash: -1985651750 size: 29 numMoves : 28
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+1.2 1.2 X   1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 125 collisions: 0 98 hash: -1935123577 size: 29 numMoves : 29
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+1.2 1.2 1.1 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 126 collisions: 0 99 hash: 714862970 size: 29 numMoves : 30
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+1.2 1.2 1.1 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 127 collisions: 0 100 hash: 1315016448 size: 29 numMoves : 28
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+2.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 128 collisions: 0 101 hash: -99039963 size: 29 numMoves : 31
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+1.2 1.2 1.1 2.1 
+2.1 1.2 1.2 2.1 
+2.1 X   1.2 1.2 
+hashset size: 129 collisions: 0 102 hash: -98953473 size: 29 numMoves : 29
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+1.2 1.2 1.1 2.1 
+2.1 1.2 1.2 2.1 
+2.1 X   1.2 1.2 
+hashset size: 129 collisions: 0 103 hash: -319065508 size: 28 numMoves : 28
+
+1.1 2.2 2.2 1.1 
+X   2.2 2.2 1.1 
+1.2 1.2 1.1 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 129 collisions: 0 104 hash: 1314006437 size: 27 numMoves : 29
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+2.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+1.2 1.2 X   2.1 
+hashset size: 129 collisions: 0 105 hash: -2069749790 size: 26 numMoves : 26
+
+1.1 2.2 2.2 1.1 
+X   2.2 2.2 1.1 
+X   1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 129 collisions: 0 106 hash: 1314092927 size: 25 numMoves : 25
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+2.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+1.2 1.2 X   2.1 
+hashset size: 129 collisions: 0 107 hash: 1382771912 size: 24 numMoves : 24
+
+1.1 2.2 2.2 1.1 
+X   2.2 2.2 1.1 
+X   1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 131 collisions: 0 108 hash: -1957109089 size: 25 numMoves : 25
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+X   1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 133 collisions: 0 109 hash: 1466869952 size: 26 numMoves : 26
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+1.2 1.2 X   1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 134 collisions: 0 110 hash: -1092677983 size: 26 numMoves : 27
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+1.2 1.2 1.1 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 137 collisions: 0 111 hash: -127582624 size: 28 numMoves : 28
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+1.2 1.2 1.1 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 139 collisions: 0 112 hash: 1467763682 size: 29 numMoves : 28
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 X   
+1.2 1.2 1.1 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 142 collisions: 0 113 hash: -391526915 size: 31 numMoves : 29
+
+X   2.2 2.2 X   
+1.1 2.2 2.2 1.1 
+1.2 1.2 1.1 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 143 collisions: 0 114 hash: -1092591493 size: 31 numMoves : 29
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+1.2 1.2 1.1 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 145 collisions: 0 115 hash: 1466783462 size: 32 numMoves : 30
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+1.2 1.2 X   1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 146 collisions: 0 116 hash: -1957022599 size: 32 numMoves : 31
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+X   1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 146 collisions: 0 117 hash: -127669114 size: 31 numMoves : 30
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+1.2 1.2 1.1 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 147 collisions: 0 118 hash: -460446524 size: 31 numMoves : 30
+
+1.1 2.2 2.2 X   
+X   2.2 2.2 1.1 
+1.2 1.2 1.1 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 148 collisions: 0 119 hash: -391613405 size: 31 numMoves : 31
+
+X   2.2 2.2 X   
+1.1 2.2 2.2 1.1 
+1.2 1.2 1.1 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 148 collisions: 0 120 hash: -2047340120 size: 30 numMoves : 26
+
+X   2.2 2.2 1.1 
+X   2.2 2.2 1.1 
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 149 collisions: 0 121 hash: 743492121 size: 30 numMoves : 31
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+1.2 1.2 1.1 2.1 
+2.1 1.2 1.2 2.1 
+2.1 X   1.2 1.2 
+hashset size: 150 collisions: 0 122 hash: 743405631 size: 30 numMoves : 29
+
+X   2.2 2.2 1.1 
+1.1 2.2 2.2 1.1 
+1.2 1.2 1.1 2.1 
+2.1 1.2 1.2 2.1 
+2.1 X   1.2 1.2 
+hashset size: 150 collisions: 0 123 hash: -1161511102 size: 29 numMoves : 28
+
+1.1 2.2 2.2 1.1 
+X   2.2 2.2 1.1 
+1.2 1.2 1.1 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 150 collisions: 0 124 hash: -2098378941 size: 28 numMoves : 25
+
+1.1 2.2 2.2 1.1 
+X   2.2 2.2 1.1 
+1.2 1.2 X   1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 150 collisions: 0 125 hash: 1354142761 size: 27 numMoves : 27
+
+1.1 2.2 2.2 1.1 
+X   2.2 2.2 1.1 
+1.2 1.2 X   1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 150 collisions: 0 126 hash: 232580575 size: 26 numMoves : 27
+
+2.2 2.2 X   1.1 
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 152 collisions: 0 127 hash: -1381972796 size: 27 numMoves : 28
+
+2.2 2.2 1.1 X   
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 155 collisions: 0 128 hash: 1958760417 size: 29 numMoves : 29
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 157 collisions: 0 129 hash: -2096544634 size: 30 numMoves : 30
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 161 collisions: 0 130 hash: -1733481183 size: 33 numMoves : 31
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 164 collisions: 0 131 hash: 1214137408 size: 35 numMoves : 32
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 168 collisions: 0 132 hash: -2138868993 size: 38 numMoves : 33
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 171 collisions: 0 133 hash: -1691156824 size: 40 numMoves : 34
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 174 collisions: 0 134 hash: -1366890229 size: 42 numMoves : 33
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 177 collisions: 0 135 hash: 1093822781 size: 44 numMoves : 31
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 180 collisions: 0 136 hash: 2084230723 size: 46 numMoves : 35
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 182 collisions: 0 137 hash: -1507443102 size: 47 numMoves : 36
+
+2.2 2.2 1.1 X   
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 185 collisions: 0 138 hash: 996472539 size: 49 numMoves : 37
+
+2.2 2.2 X   X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 185 collisions: 0 139 hash: 1401860349 size: 48 numMoves : 29
+
+2.2 2.2 X   X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 185 collisions: 0 140 hash: 1393664262 size: 47 numMoves : 34
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+1.2 1.2 X   2.1 
+hashset size: 188 collisions: 0 141 hash: 341048933 size: 49 numMoves : 35
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 191 collisions: 0 142 hash: -493801754 size: 51 numMoves : 36
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 194 collisions: 0 143 hash: -430929831 size: 53 numMoves : 37
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 197 collisions: 0 144 hash: 54863682 size: 55 numMoves : 38
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 201 collisions: 0 145 hash: -652197725 size: 58 numMoves : 39
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 203 collisions: 0 146 hash: -2128512483 size: 59 numMoves : 39
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 204 collisions: 0 147 hash: -1989362813 size: 59 numMoves : 37
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 206 collisions: 0 148 hash: -1879600056 size: 60 numMoves : 38
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 208 collisions: 0 149 hash: 1515002499 size: 61 numMoves : 39
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 209 collisions: 0 150 hash: -1114416092 size: 61 numMoves : 40
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 210 collisions: 0 151 hash: -243342307 size: 61 numMoves : 33
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 210 collisions: 0 152 hash: -145550723 size: 60 numMoves : 39
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 211 collisions: 0 153 hash: -260461020 size: 60 numMoves : 32
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 X   1.2 1.2 
+hashset size: 213 collisions: 0 154 hash: -227774813 size: 61 numMoves : 35
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 214 collisions: 0 155 hash: -353245119 size: 61 numMoves : 31
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 215 collisions: 0 156 hash: -988945786 size: 61 numMoves : 32
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 216 collisions: 0 157 hash: 1389532193 size: 61 numMoves : 33
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 217 collisions: 0 158 hash: -1847821276 size: 61 numMoves : 38
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 220 collisions: 0 159 hash: -25542021 size: 63 numMoves : 39
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 221 collisions: 0 160 hash: -350524128 size: 63 numMoves : 40
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 223 collisions: 0 161 hash: 2040984507 size: 64 numMoves : 41
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 223 collisions: 0 162 hash: -1008585853 size: 63 numMoves : 39
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 226 collisions: 0 163 hash: -833116442 size: 65 numMoves : 40
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 228 collisions: 0 164 hash: 1434590280 size: 66 numMoves : 40
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 231 collisions: 0 165 hash: -2025097627 size: 68 numMoves : 41
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 233 collisions: 0 166 hash: -535156474 size: 69 numMoves : 42
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+1.2 1.2 X   2.1 
+hashset size: 235 collisions: 0 167 hash: 737434653 size: 70 numMoves : 41
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 237 collisions: 0 168 hash: 874822720 size: 71 numMoves : 42
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 238 collisions: 0 169 hash: 561930507 size: 71 numMoves : 43
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 239 collisions: 0 170 hash: -271021029 size: 71 numMoves : 39
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 239 collisions: 0 171 hash: 152130335 size: 70 numMoves : 41
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 239 collisions: 0 172 hash: 1860069497 size: 69 numMoves : 41
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 239 collisions: 0 173 hash: -1973291582 size: 68 numMoves : 38
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 239 collisions: 0 174 hash: 1520754809 size: 67 numMoves : 37
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 239 collisions: 0 175 hash: 575655208 size: 66 numMoves : 34
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 239 collisions: 0 176 hash: -187184353 size: 65 numMoves : 33
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 239 collisions: 0 177 hash: 701125514 size: 64 numMoves : 32
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 239 collisions: 0 178 hash: -1045224735 size: 63 numMoves : 41
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 240 collisions: 0 179 hash: -1450612545 size: 63 numMoves : 39
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 240 collisions: 0 180 hash: 295407961 size: 62 numMoves : 35
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 241 collisions: 0 181 hash: 700795771 size: 62 numMoves : 31
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 241 collisions: 0 182 hash: 658892385 size: 61 numMoves : 41
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 242 collisions: 0 183 hash: 1117139204 size: 61 numMoves : 34
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 242 collisions: 0 184 hash: 319577697 size: 60 numMoves : 39
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 243 collisions: 0 185 hash: 1522527014 size: 60 numMoves : 38
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 243 collisions: 0 186 hash: -1064501120 size: 59 numMoves : 34
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 243 collisions: 0 187 hash: -1469888930 size: 58 numMoves : 32
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 243 collisions: 0 188 hash: 1535483965 size: 57 numMoves : 41
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 244 collisions: 0 189 hash: -1122952163 size: 57 numMoves : 37
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   X   
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 244 collisions: 0 190 hash: -1958283585 size: 56 numMoves : 29
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   X   
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 244 collisions: 0 191 hash: 358050881 size: 55 numMoves : 37
+
+2.2 2.2 X   1.1 
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 245 collisions: 0 192 hash: 1412295754 size: 55 numMoves : 38
+
+X   2.2 2.2 1.1 
+X   2.2 2.2 1.1 
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 245 collisions: 0 193 hash: -609865019 size: 54 numMoves : 27
+
+2.2 2.2 X   1.1 
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 247 collisions: 0 194 hash: -539527202 size: 55 numMoves : 28
+
+2.2 2.2 1.1 X   
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 250 collisions: 0 195 hash: 1116314823 size: 57 numMoves : 29
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 252 collisions: 0 196 hash: -1254099040 size: 58 numMoves : 30
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 256 collisions: 0 197 hash: 1719040519 size: 61 numMoves : 31
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 259 collisions: 0 198 hash: 2056583002 size: 63 numMoves : 32
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 262 collisions: 0 199 hash: 1313652709 size: 65 numMoves : 33
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 265 collisions: 0 200 hash: -848711230 size: 67 numMoves : 34
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 268 collisions: 0 201 hash: 251377187 size: 69 numMoves : 31
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 271 collisions: 0 202 hash: 1241785129 size: 71 numMoves : 35
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 273 collisions: 0 203 hash: -664997508 size: 72 numMoves : 36
+
+2.2 2.2 1.1 X   
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 276 collisions: 0 204 hash: 154026945 size: 74 numMoves : 37
+
+2.2 2.2 X   X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 276 collisions: 0 205 hash: 559414755 size: 73 numMoves : 29
+
+2.2 2.2 X   X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 276 collisions: 0 206 hash: -1085787901 size: 72 numMoves : 33
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 277 collisions: 0 207 hash: -1037154462 size: 72 numMoves : 34
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 278 collisions: 0 208 hash: 672556905 size: 72 numMoves : 35
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 281 collisions: 0 209 hash: -271970498 size: 74 numMoves : 36
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 282 collisions: 0 210 hash: 581984574 size: 74 numMoves : 32
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 X   1.2 1.2 
+hashset size: 285 collisions: 0 211 hash: -1494643319 size: 76 numMoves : 33
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 288 collisions: 0 212 hash: 897309276 size: 78 numMoves : 34
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 292 collisions: 0 213 hash: -1273375425 size: 81 numMoves : 35
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 293 collisions: 0 214 hash: 348643840 size: 81 numMoves : 36
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 295 collisions: 0 215 hash: 1324009219 size: 82 numMoves : 35
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 296 collisions: 0 216 hash: 1463158889 size: 82 numMoves : 37
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 297 collisions: 0 217 hash: -987996317 size: 82 numMoves : 35
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 298 collisions: 0 218 hash: -1070220407 size: 82 numMoves : 35
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 299 collisions: 0 219 hash: -1195690713 size: 82 numMoves : 31
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 300 collisions: 0 220 hash: -146500192 size: 82 numMoves : 32
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 301 collisions: 0 221 hash: 547086599 size: 82 numMoves : 33
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 302 collisions: 0 222 hash: -1005375682 size: 82 numMoves : 38
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 305 collisions: 0 223 hash: -867987615 size: 84 numMoves : 39
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 306 collisions: 0 224 hash: 491921466 size: 84 numMoves : 40
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 308 collisions: 0 225 hash: 1198538913 size: 85 numMoves : 41
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 308 collisions: 0 226 hash: -1851031447 size: 84 numMoves : 39
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 310 collisions: 0 227 hash: 9329152 size: 85 numMoves : 40
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 311 collisions: 0 228 hash: -2017931422 size: 85 numMoves : 40
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 313 collisions: 0 229 hash: -105010941 size: 86 numMoves : 41
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 314 collisions: 0 230 hash: 1717268314 size: 86 numMoves : 42
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 314 collisions: 0 231 hash: -1113466623 size: 85 numMoves : 39
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 314 collisions: 0 232 hash: -690315259 size: 84 numMoves : 41
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 314 collisions: 0 233 hash: 1017623903 size: 83 numMoves : 41
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 314 collisions: 0 234 hash: 678309215 size: 82 numMoves : 37
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 314 collisions: 0 235 hash: -1130845988 size: 81 numMoves : 36
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 314 collisions: 0 236 hash: 1418100802 size: 80 numMoves : 34
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 314 collisions: 0 237 hash: -1029629947 size: 79 numMoves : 33
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+X   1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 314 collisions: 0 238 hash: 1543571108 size: 78 numMoves : 32
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 314 collisions: 0 239 hash: -1887670329 size: 77 numMoves : 41
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 315 collisions: 0 240 hash: 2001909157 size: 77 numMoves : 35
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 315 collisions: 0 241 hash: -547037633 size: 76 numMoves : 35
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 316 collisions: 0 242 hash: -141649823 size: 76 numMoves : 31
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 X   
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 316 collisions: 0 243 hash: 1959584798 size: 75 numMoves : 34
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 316 collisions: 0 244 hash: -1929994688 size: 74 numMoves : 36
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 316 collisions: 0 245 hash: -222055526 size: 73 numMoves : 34
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 316 collisions: 0 246 hash: -627443336 size: 72 numMoves : 32
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 X   1.2 1.2 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 316 collisions: 0 247 hash: 693038371 size: 71 numMoves : 37
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 317 collisions: 0 248 hash: -1965397757 size: 71 numMoves : 37
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   X   
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 317 collisions: 0 249 hash: 1494238117 size: 70 numMoves : 29
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   X   
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 317 collisions: 0 250 hash: -484394713 size: 69 numMoves : 37
+
+2.2 2.2 X   1.1 
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 318 collisions: 0 251 hash: -2040225948 size: 69 numMoves : 38
+
+X   2.2 2.2 1.1 
+X   2.2 2.2 1.1 
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+hashset size: 318 collisions: 0 252 hash: 1490626140 size: 68 numMoves : 40
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+1.2 1.2 X   2.1 
+hashset size: 318 collisions: 0 253 hash: 1151311452 size: 67 numMoves : 42
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+1.2 1.2 X   2.1 
+hashset size: 318 collisions: 0 254 hash: -1888387006 size: 66 numMoves : 38
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 X   1.2 1.2 
+hashset size: 318 collisions: 0 255 hash: 1564134696 size: 65 numMoves : 42
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 X   1.2 1.2 
+hashset size: 318 collisions: 0 256 hash: 348146306 size: 64 numMoves : 42
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 319 collisions: 0 257 hash: 2094166812 size: 64 numMoves : 40
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 319 collisions: 0 258 hash: -1861485796 size: 63 numMoves : 36
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 320 collisions: 0 259 hash: 687460994 size: 63 numMoves : 34
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 320 collisions: 0 260 hash: 1536433434 size: 62 numMoves : 36
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 324 collisions: 0 261 hash: 1456930335 size: 65 numMoves : 37
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 325 collisions: 0 262 hash: -623568574 size: 65 numMoves : 38
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 X   1.2 1.2 
+hashset size: 327 collisions: 0 263 hash: -289090171 size: 66 numMoves : 39
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 327 collisions: 0 264 hash: -1097425917 size: 65 numMoves : 37
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 2.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+2.1 1.2 1.2 X   
+hashset size: 329 collisions: 0 265 hash: 1563211175 size: 66 numMoves : 37
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 330 collisions: 0 266 hash: 1536407486 size: 66 numMoves : 38
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 X   1.2 1.2 
+hashset size: 330 collisions: 0 267 hash: -1312267542 size: 65 numMoves : 38
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 2.1 
+1.1 1.2 1.2 2.1 
+2.1 X   1.2 1.2 
+2.1 1.2 1.2 X   
+hashset size: 332 collisions: 0 268 hash: -254980323 size: 66 numMoves : 39
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 2.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+2.1 1.2 1.2 X   
+hashset size: 333 collisions: 0 269 hash: 1479169834 size: 66 numMoves : 40
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 2.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+2.1 X   1.2 1.2 
+hashset size: 335 collisions: 0 270 hash: -2001000829 size: 67 numMoves : 41
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 2.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+2.1 1.2 1.2 X   
+hashset size: 336 collisions: 0 271 hash: 433752964 size: 67 numMoves : 42
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 2.1 
+1.1 1.2 1.2 2.1 
+2.1 X   1.2 1.2 
+2.1 1.2 1.2 X   
+hashset size: 336 collisions: 0 272 hash: -1973351868 size: 66 numMoves : 38
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 2.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+2.1 X   1.2 1.2 
+hashset size: 337 collisions: 0 273 hash: 1451520873 size: 66 numMoves : 39
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 2.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+2.1 1.2 1.2 X   
+hashset size: 337 collisions: 0 274 hash: 1454209344 size: 65 numMoves : 36
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 337 collisions: 0 275 hash: -1970585148 size: 64 numMoves : 34
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 337 collisions: 0 276 hash: -1888361058 size: 63 numMoves : 32
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 337 collisions: 0 277 hash: 693987840 size: 62 numMoves : 36
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 340 collisions: 0 278 hash: -1995591367 size: 64 numMoves : 37
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 341 collisions: 0 279 hash: -1466014168 size: 64 numMoves : 38
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 X   1.2 1.2 
+hashset size: 343 collisions: 0 280 hash: 553355423 size: 65 numMoves : 39
+
+2.2 2.2 1.1 X   
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 343 collisions: 0 281 hash: -1889310527 size: 64 numMoves : 37
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 344 collisions: 0 282 hash: 693961892 size: 64 numMoves : 38
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 X   1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 X   1.2 1.2 
+hashset size: 344 collisions: 0 283 hash: 611763750 size: 63 numMoves : 40
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 344 collisions: 0 284 hash: 1481936554 size: 62 numMoves : 40
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 344 collisions: 0 285 hash: 1564160644 size: 61 numMoves : 32
+
+2.2 2.2 1.1 1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 344 collisions: 0 286 hash: -1455902426 size: 60 numMoves : 44
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 345 collisions: 0 287 hash: 1131125708 size: 60 numMoves : 42
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 345 collisions: 0 288 hash: -1235020852 size: 59 numMoves : 36
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 346 collisions: 0 289 hash: 472918310 size: 59 numMoves : 34
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+2.1 1.1 1.2 1.2 
+2.1 1.2 1.2 2.1 
+X   1.2 1.2 2.1 
+hashset size: 346 collisions: 0 290 hash: -848711230 size: 58 numMoves : 36
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 346 collisions: 1 291 hash: 897309276 size: 57 numMoves : 42
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 346 collisions: 2 292 hash: 2102862424 size: 56 numMoves : 34
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 346 collisions: 2 293 hash: 356841918 size: 55 numMoves : 32
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 346 collisions: 2 294 hash: -1691156824 size: 54 numMoves : 36
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 346 collisions: 3 295 hash: 54863682 size: 53 numMoves : 42
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 346 collisions: 4 296 hash: 1260416830 size: 52 numMoves : 40
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 346 collisions: 4 297 hash: -485603676 size: 51 numMoves : 32
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 1.1 
+1.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 346 collisions: 4 298 hash: 1488388955 size: 50 numMoves : 29
+
+1.1 2.2 2.2 1.1 
+X   2.2 2.2 1.1 
+1.2 1.2 1.1 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 347 collisions: 4 299 hash: 645943361 size: 50 numMoves : 29
+
+1.1 2.2 2.2 1.1 
+X   2.2 2.2 1.1 
+1.2 1.2 1.1 2.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 X   
+hashset size: 348 collisions: 4 300 hash: 151305954 size: 50 numMoves : 36
+
+2.2 2.2 X   1.1 
+2.2 2.2 1.1 X   
+1.1 1.2 1.2 1.1 
+2.1 1.2 1.2 2.1 
+2.1 1.2 1.2 2.1 
+got here :(
