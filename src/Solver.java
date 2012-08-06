@@ -59,8 +59,20 @@ public class Solver {
 	}*/
 
 	private void solve() {
+		int step=0;
+		int collisions = 0;
+		int hashCollisions = 0;
+		ArrayList<Integer> hashes = new ArrayList<Integer>(5000);
         while (!stack.isEmpty()) {
             Tray myTray = stack.pop();
+            step+=1;
+            System.out.println(hashCollisions + " " + step + " hash: " + myTray.hashCode() + "size: " + stack.size() + " numMoves : " + myTray.history.size());
+            if(hashes.contains(new Integer(myTray.hashCode()))){
+            	hashCollisions+=1;
+            }
+            else{
+            	hashes.add(new Integer(myTray.hashCode()));
+            }
             if(myTray.isAtGoal(goalBlocks)){
                 for(int i = 0; i < myTray.history.size(); i++){
                     System.out.println(i + " " + myTray.history.get(i));
