@@ -28,7 +28,7 @@ public class Tray {
         this.config = new Block[otherTray.lengthOfTray][otherTray.widthOfTray];
         this.history = new ArrayList<String> (otherTray.history);
         this.blocksOnTray = new HashSet<Block> ();
-        this.cost = otherTray.cost;
+        this.cost = 100000000;
         Iterator<Block> i = otherTray.blocksOnTray.iterator();
 		while (i.hasNext()) {
 			Block temp = new Block(i.next());
@@ -162,10 +162,10 @@ public class Tray {
 						toSet += maxOwnage/(GBlen*GBwid);
 					}
 					else if (cell == null) { //if goal cell is empty, it's more desirable
-						toSet += maxOwnage/(GBlen*GBwid)/2;
+						toSet += (maxOwnage/(GBlen*GBwid))/2;
 					}
 					else { //if a goal cell is not empty and is filled with a matching block, it's very desirable
-						toSet -= maxOwnage/(GBlen*GBwid);
+						toSet -= 2*(maxOwnage/(GBlen*GBwid));
 					}
 				}
 			}

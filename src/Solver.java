@@ -3,6 +3,7 @@ package src;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Iterator;
 
 //check hashcodes later and equals methods
 
@@ -18,104 +19,119 @@ public class Solver {
 	}
 
 	private void solve() {
-		int step=0;
-		int count = 0;
-		int[] hashes = new int[1000];
-        while (!stack.isEmpty()) {
+		int step=1;
+		int collisions = 0;
+		int hashCollisions = 0;
+		HashSet<Integer> hashes = new HashSet<Integer>();
+		
+        while (!stack.isEmpty() && step < 300) {
+            //System.out.println("last " + stack.getLast().cost);
             Tray myTray = stack.pop();
+            //System.out.println(myTray.cost);
             step+=1;
-            System.out.println(seen.size() + " " + step + " hash: " + myTray.hashCode() + "size: " + stack.size() + " numMoves : " + myTray.history.size());
+	            System.out.println("hashset size: " + seen.size() + " collisions: " + hashCollisions + " " + step + " hash: " + myTray.hashCode() + " size: " + stack.size() + " numMoves : " + myTray.history.size());
+	            System.out.println(myTray);
+	            if(hashes.contains(new Integer(myTray.hashCode()))){
+	            	hashCollisions+=1;
+	            }
+	            else{
+	            	hashes.add(new Integer(myTray.hashCode()));
+	            }
+	            
+            //System.out.println(stack.size());
             if(myTray.isAtGoal(goalBlocks)){
-                for(int i = 0; i < myTray.history.size(); i++){
-                    System.out.println(i + " " + myTray.history.get(i));
-                    count += 1;
-                }
-                System.out.print(count);
-                System.exit(0);
-                return;
+            	for(int i = 0; i < myTray.history.size(); i++){
+            		System.out.println(i + " " + myTray.history.get(i));
+            	}
+            	System.exit(0);
+            	return;
             }
             myTray.populateNextMoves();
             seen.add(myTray);
             for (Block toMove: myTray.nextMoves){
             	decideMove(toMove, myTray);
-                int rCoor = toMove.upLCrow;
-                int cCoor = toMove.upLCcol;
-                for (Integer i : toMove.directions) {
-                	switch (i) {
-                	case 0: 
-                		//System.out.println("Down " + toMove);
-	                	Tray one = new Tray(myTray);
-	                    Block copy1 = one.config[rCoor][cCoor];
-	                    one.move(copy1, rCoor + 1, cCoor);
-	                    one.calculateCost(goalBlocks);
-	                    if(!seen.contains(one)&& one.history.size() < 4000) {
-	                        this.stack.push(one);
-	                        one.history.add(copy1.length + " " 
-	                                        + copy1.width + " "
-	                                        + copy1.upLCrow + " "
-	                                        + copy1.upLCcol);
-	                    }
-	                    else {
-	                    	System.out.println("Just jumped to a previous configuration or different moving option");
-	                    	System.out.println("");
-	                    }
-	                    break;
-                	case 1:
-                		//System.out.println("Up " + toMove);
-	                    Tray two = new Tray(myTray);
-	                    Block copy2 = two.config[rCoor][cCoor];
-	                    two.move(copy2, rCoor-1, cCoor);
-	                    two.calculateCost(goalBlocks);
-	                    if(!seen.contains(two)&& two.history.size() < 4000){	
-	                        this.stack.push(two);
-	                        two.history.add(copy2.length + " "
-	                                        + copy2.width + " " 
-	                                        + copy2.upLCrow + " " 
-	                                        + copy2.upLCcol);
-	                    }
-	                    else {
-	                    	System.out.println("Just jumped to a previous configuration or different moving option");
-	                    	System.out.println("");
-	                    }
-	                    break;
-                	case 2:
-                	  	//System.out.println("Right " + toMove);
-	                    Tray three = new Tray(myTray);
-	                    Block copy3 = three.config[rCoor][cCoor];
-	                    three.move(copy3, rCoor, cCoor + 1);
-	                    three.calculateCost(goalBlocks);
-	                    if(!seen.contains(three)&& three.history.size() < 4000){	
-	                        this.stack.push(three);
-	                        three.history.add(copy3.length + " " 
-	                                          + copy3.width + " " 
-	                                          + copy3.upLCrow + " " 
-	                                          + copy3.upLCcol);
-	                    }
-	                    else {
-	                    	System.out.println("");
-	                    	System.out.println("Just jumped to a previous configuration or different moving option");
-	                    }
-	                    break;
-                	case 3:
-                		//System.out.println("Left " + toMove);
-	                    Tray four = new Tray(myTray);
-	                    Block copy4 = four.config[rCoor][cCoor];
-	                    four.move(copy4, rCoor, cCoor - 1);
-	                    four.calculateCost(goalBlocks);
-	                    if(!seen.contains(four) && four.history.size() < 4000){
-	                        this.stack.push(four);
-	                        four.history.add(copy4.length + " " 
-	                                        + copy4.width + " " 
-	                                        + copy4.upLCrow + " " 
-	                                        + copy4.upLCcol);
-	                    }
-	                    else {
-	                    	System.out.println("Just jumped to a previous configuration or different moving option");
-	                    	System.out.println("");
-	                    }
-	                    break;
-                	}
-                }
+            	int rCoor = toMove.upLCrow;
+            	int cCoor = toMove.upLCcol;
+            	for (Integer i : toMove.directions) {
+            		switch (i) {
+            		case 0: 
+            			//System.out.println("Down " + toMove);
+            			Tray one = new Tray(myTray);
+            			Block copy1 = one.config[rCoor][cCoor];
+            			one.move(copy1, rCoor + 1, cCoor);
+            			one.calculateCost(goalBlocks);
+            			if(!seen.contains(one)) {
+            				this.push(one);
+            				seen.add(one);
+            				one.history.add(copy1.length + " " 
+            						+ copy1.width + " "
+            						+ copy1.upLCrow + " "
+            						+ copy1.upLCcol);
+            			}
+            			else {
+            				//System.out.println("Just jumped to a previous configuration or different moving option");
+            				//System.out.println("");
+            			}
+            			break;
+            		case 1:
+            			//System.out.println("Up " + toMove);
+            			Tray two = new Tray(myTray);
+            			Block copy2 = two.config[rCoor][cCoor];
+            			two.move(copy2, rCoor-1, cCoor);
+            			two.calculateCost(goalBlocks);
+            			if(!seen.contains(two)){	
+            				this.push(two);
+            				seen.add(two);
+            				two.history.add(copy2.length + " "
+            						+ copy2.width + " " 
+            						+ copy2.upLCrow + " " 
+            						+ copy2.upLCcol);
+            			}
+            			else {
+            				//System.out.println("Just jumped to a previous configuration or different moving option");
+            				//System.out.println("");
+            			}
+            			break;
+            		case 2:
+            			//System.out.println("Right " + toMove);
+            			Tray three = new Tray(myTray);
+            			Block copy3 = three.config[rCoor][cCoor];
+            			three.move(copy3, rCoor, cCoor + 1);
+            			three.calculateCost(goalBlocks);
+            			if(!seen.contains(three)){	
+            				this.push(three);
+            				seen.add(three);
+            				three.history.add(copy3.length + " " 
+            						+ copy3.width + " " 
+            						+ copy3.upLCrow + " " 
+            						+ copy3.upLCcol);
+            			}
+            			else {
+            				//System.out.println("");
+            				//System.out.println("Just jumped to a previous configuration or different moving option");
+            			}
+            			break;
+            		case 3:
+            			//System.out.println("Left " + toMove);
+            			Tray four = new Tray(myTray);
+            			Block copy4 = four.config[rCoor][cCoor];
+            			four.move(copy4, rCoor, cCoor - 1);
+            			four.calculateCost(goalBlocks);
+            			if(!seen.contains(four)){
+            				this.push(four);
+            				seen.add(four);
+            				four.history.add(copy4.length + " " 
+            						+ copy4.width + " " 
+            						+ copy4.upLCrow + " " 
+            						+ copy4.upLCcol);
+            			}
+            			else {
+            				//System.out.println("Just jumped to a previous configuration or different moving option");
+            				//System.out.println("");
+            			}
+            			break;
+            		}
+            	}
             }
         }
         System.out.println("got here :(");
@@ -168,20 +184,20 @@ public class Solver {
 		this.goalBlocks.add(blockToAdd);
 	}
 	
-    /* This method mantains the order of the Trays */
+    /* This method maintains the order of the Trays */
 	public void push (Tray t) {
         int index = 0;
+        //Iterator itr = stack.descendingIterator();
         for (Tray comp : stack) {
-            if (t.compareTo(comp) == -1) {
-            	System.out.println("got here");
-                continue;
-            } else if (t.compareTo(comp) >= 0) {
+        //	Tray comp = (Tray) itr.next();
+            if (t.compareTo(comp) == 1) {
+                index += 1;
+            } else if (t.compareTo(comp) <= 0) {
                 stack.add(index, t);
                 return;
             }
-            index += 1;
         }
-        stack.addLast(t);
+        stack.add(t);
 	}
 
 	public static void main(String[] args) {
