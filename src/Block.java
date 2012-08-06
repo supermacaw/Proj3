@@ -34,8 +34,8 @@ public class Block{
     }
     
     public int hashCode() {
-    	int dim = length + width * 10;
-    	int coord = upLCrow + upLCcol*10;
+    	int dim = length + (width * width);
+    	int coord = upLCrow + (upLCcol*upLCcol);
     	return dim ^ coord;
     }
       
@@ -65,5 +65,9 @@ public class Block{
     		toRtn += i;
     	}
     	return toRtn;
+    }
+    
+    public boolean isOK() { 
+    	return this.upLCrow >= 0 && this.upLCcol >= 0 && this.length > 0 && this.width > 0;
     }
 }

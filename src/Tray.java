@@ -50,8 +50,8 @@ public class Tray {
 		}
 	}
 	
-	public void populateNextMoves() {
-        this.nextMoves = this.emptyCoordsAdjBlocks();
+	public void populateNextMoves(ArrayList<Block> goalBlocks) {
+        this.nextMoves = this.emptyCoordsAdjBlocks(goalBlocks);
 	}
 
     public void remove (Block toRemove) {
@@ -83,7 +83,7 @@ public class Tray {
 		blocksOnTray.add(blockToMove); //check hashCode?
 	}
 
-	private void addAdjBlocks(LinkedList<Block>result, int i, int j, int dir){
+	private void addAdjBlocks(LinkedList<Block>result, int i, int j, int dir, ArrayList<Block> goalBlocks){
 		if(!this.inBounds(i, j)){
 			return;
 		} 
@@ -117,28 +117,32 @@ public class Tray {
             	toAdd.directions.add(dir);
             }
 			if(!result.contains(toAdd)){
-                if (toAdd.isPriority()) {
-                    result.addFirst(this.config[i][j]);
-                } else {
-                    result.add(this.config[i][j]);
+                if (toAdd.isPriority() && !goalBlocks.contains(toAdd)) {
+                    result.addFirst(toAdd);
+                    //System.out.println("Added " + toAdd + " to the front of moves list");
+                } /*else if (toAdd.isPriority() && goalBlocks.contains(toAdd)) {
+                	result.add(1, toAdd);
+                }*/ else {
+                    result.add(toAdd);
+                    //System.out.println("Added " + toAdd + " to the end of moves list");
                 }
 			}
 		}
 	}
 	
-	private void emptyCoordsAdjBlocksHelper(LinkedList<Block> result, int row, int col){
-		addAdjBlocks(result, row-1, col, 0);
-		addAdjBlocks(result, row + 1, col, 1);
-		addAdjBlocks(result, row, col-1, 2);
-		addAdjBlocks(result, row, col+1, 3);
+	private void emptyCoordsAdjBlocksHelper(LinkedList<Block> result, int row, int col, ArrayList<Block> goalBlocks){
+		addAdjBlocks(result, row-1, col, 0, goalBlocks);
+		addAdjBlocks(result, row + 1, col, 1, goalBlocks);
+		addAdjBlocks(result, row, col-1, 2, goalBlocks);
+		addAdjBlocks(result, row, col+1, 3, goalBlocks);
 	}
 
-	public LinkedList <Block> emptyCoordsAdjBlocks(){
+	public LinkedList <Block> emptyCoordsAdjBlocks(ArrayList<Block> goalBlocks){
 		LinkedList<Block> result = new LinkedList<Block>();
 		for(int row = 0; row < this.lengthOfTray; row++){
 			for(int col = 0; col < this.widthOfTray; col++){
 				if(this.config[row][col] == null){
-					this.emptyCoordsAdjBlocksHelper(result, row, col);
+					this.emptyCoordsAdjBlocksHelper(result, row, col, goalBlocks);
 				}
 			}
 		}

@@ -69,7 +69,7 @@ public class Solver {
                 System.exit(0);
                 return;
             }
-            myTray.populateNextMoves();
+            myTray.populateNextMoves(goalBlocks);
             seen.add(myTray);
             for (Block toMove: myTray.nextMoves){
             	decideMove(toMove, myTray);
@@ -84,7 +84,7 @@ public class Solver {
 	                    one.move(copy1, rCoor + 1, cCoor);
 	                    one.calculateCost(goalBlocks);
 	                    if(!seen.contains(one)) {
-	                        this.stack.push(one);
+	                        this.push(one);
 	                        one.history.add(copy1.length + " " 
 	                                        + copy1.width + " "
 	                                        + copy1.upLCrow + " "
@@ -102,16 +102,16 @@ public class Solver {
 	                    two.move(copy2, rCoor-1, cCoor);
 	                    two.calculateCost(goalBlocks);
 	                    if(!seen.contains(two)){	
-	                        this.stack.push(two);
+	                        this.push(two);
 	                        two.history.add(copy2.length + " "
 	                                        + copy2.width + " " 
 	                                        + copy2.upLCrow + " " 
 	                                        + copy2.upLCcol);
 	                    }
-	                    else {
+	                    /*else {
 	                    	System.out.println("Just jumped to a previous configuration or different moving option");
 	                    	System.out.println("");
-	                    }
+	                    }*/
 	                    break;
                 	case 2:
                 	  	//System.out.println("Right " + toMove);
@@ -120,7 +120,7 @@ public class Solver {
 	                    three.move(copy3, rCoor, cCoor + 1);
 	                    three.calculateCost(goalBlocks);
 	                    if(!seen.contains(three)){	
-	                        this.stack.push(three);
+	                        this.push(three);
 	                        three.history.add(copy3.length + " " 
 	                                          + copy3.width + " " 
 	                                          + copy3.upLCrow + " " 
@@ -138,7 +138,7 @@ public class Solver {
 	                    four.move(copy4, rCoor, cCoor - 1);
 	                    four.calculateCost(goalBlocks);
 	                    if(!seen.contains(four)){
-	                        this.stack.push(four);
+	                        this.push(four);
 	                        four.history.add(copy4.length + " " 
 	                                        + copy4.width + " " 
 	                                        + copy4.upLCrow + " " 
@@ -167,11 +167,13 @@ public class Solver {
             	if (movingBlock.length == toCheck.length && movingBlock.width == toCheck.width) { //find which goal block the moving block corresponds to
             		if (t.config[toCheck.upLCrow][toCheck.upLCcol] != null) { //see if end goal coordinate of particular goal block is already filled
             			if (!t.config[toCheck.upLCrow][toCheck.upLCcol].equals(toCheck)) { //if it is filled, make sure it is not filled by a potential goal block already
+            				//System.out.println("Saw that " + toCheck.upLCrow + " " + toCheck.upLCcol + " was not null and was not desirably filled");
             				goalRow = toCheck.upLCrow;
             				goalCol = toCheck.upLCcol;
             				break;
             			}
             		} else {
+            			//System.out.println("Saw that " + toCheck.upLCrow + " " + toCheck.upLCcol + " was null");
             			goalRow = toCheck.upLCrow; //if end goal coordinate of this particular goal block is not already filled
             			goalCol = toCheck.upLCcol; //moving block will try to move towards that position
             			break;
@@ -205,17 +207,17 @@ public class Solver {
 	
     /* This method mantains the order of the Trays */
 	public void push (Tray t) {
-        int index = 0;
+        int index = this.stack.size() - 1;
         for (Tray comp : stack) {
-            if (t.compareTo(comp) == -1) {
-                continue;
-            } else if (t.compareTo(comp) >= 0) {
-                stack.add(index, t);
+            if (t.compareTo(comp) == 1) {
+                index -= 1;
+            } else if (t.compareTo(comp) <= 0) {
+                stack.add(index + 1, t);
                 return;
             }
             index += 1;
         }
-        stack.addLast(t);
+        stack.addFirst(t);
 	}
 
 	public static void main(String[] args) {
@@ -247,7 +249,7 @@ public class Solver {
                 System.out.println("Bad tray or bad block (or other error)");
             }
 		}
-		t.populateNextMoves();
+		t.populateNextMoves(s.goalBlocks);
 		s.push(t);
 		s.solve();
 	}
