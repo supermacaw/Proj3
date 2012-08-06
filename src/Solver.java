@@ -16,55 +16,24 @@ public class Solver {
 		seen = new HashSet<Tray>();
         stack = new LinkedList<Tray> (); //Make this sorted by cost.
 	}
-	
-/*	private int getDir(Block blockToCheck, int row, int col, Tray myTray){
-		if(!myTray.inBounds(row, col)){
-			throw new IllegalArgumentException();
-		}
-		else if(blockToCheck.upLCrow < row){
-			return 0;
-		}else if(blockToCheck.upLCrow > row){
-			return 1;
-		}else if(blockToCheck.upLCcol < col){
-			return 2;
-		}else if(blockToCheck.upLCcol > col){
-			return 3;
-		}else if(blockToCheck.upLCrow == row && blockToCheck.upLCcol == col){
-			return -1;
-		}else{
-			throw new IllegalArgumentException();
-		}
-	}
-	
-	public boolean getDirWorks(){
-		Tray myTray = new Tray(5,5);
-		Block myBlock = new Block(2,2);
-		myTray.place(myBlock, 2, 2);
-		if(getDir(myBlock, 0, 0, myTray)!=1){
-			return false;
-		}if(getDir(myBlock, 3, 0, myTray)!=0){
-			return false;
-		}if(getDir(myBlock, 2, 0, myTray)!=3){
-			return false;
-		}if(getDir(myBlock, 2, 4, myTray)!=2){
-			return false;
-		}if(getDir(myBlock, 2, 2, myTray)!=(-1)){
-			return false;
-		}try{
-			getDir(myBlock, 19, 19, myTray);
-			return false;
-		}catch(Exception e){
-		}
-		return true;
-	}*/
 
 	private void solve() {
+		HashSet<Integer> s = new HashSet<Integer> ();
+		int count = 0;
         while (!stack.isEmpty()) {
-            Tray myTray = stack.pop();
+        	System.out.println(stack.size());
+            Tray myTray = stack.removeLast();  //Stack or Queue depends on this
+            System.out.println(myTray.cost);
+            
+            if (s.contains(myTray.compress())){
+            	count += 1;
+            }
+            s.add(myTray.compress());
             if(myTray.isAtGoal(goalBlocks)){
                 for(int i = 0; i < myTray.history.size(); i++){
                     System.out.println(i + " " + myTray.history.get(i));
                 }
+                System.out.print(count);
                 System.exit(0);
                 return;
             }
@@ -191,6 +160,7 @@ public class Solver {
         int index = 0;
         for (Tray comp : stack) {
             if (t.compareTo(comp) == -1) {
+            	System.out.println("got here");
                 continue;
             } else if (t.compareTo(comp) >= 0) {
                 stack.add(index, t);
@@ -253,4 +223,45 @@ public class Solver {
 		}
 		return toRtn;
 	}
+	
+	/*	private int getDir(Block blockToCheck, int row, int col, Tray myTray){
+	if(!myTray.inBounds(row, col)){
+		throw new IllegalArgumentException();
+	}
+	else if(blockToCheck.upLCrow < row){
+		return 0;
+	}else if(blockToCheck.upLCrow > row){
+		return 1;
+	}else if(blockToCheck.upLCcol < col){
+		return 2;
+	}else if(blockToCheck.upLCcol > col){
+		return 3;
+	}else if(blockToCheck.upLCrow == row && blockToCheck.upLCcol == col){
+		return -1;
+	}else{
+		throw new IllegalArgumentException();
+	}
+}
+
+public boolean getDirWorks(){
+	Tray myTray = new Tray(5,5);
+	Block myBlock = new Block(2,2);
+	myTray.place(myBlock, 2, 2);
+	if(getDir(myBlock, 0, 0, myTray)!=1){
+		return false;
+	}if(getDir(myBlock, 3, 0, myTray)!=0){
+		return false;
+	}if(getDir(myBlock, 2, 0, myTray)!=3){
+		return false;
+	}if(getDir(myBlock, 2, 4, myTray)!=2){
+		return false;
+	}if(getDir(myBlock, 2, 2, myTray)!=(-1)){
+		return false;
+	}try{
+		getDir(myBlock, 19, 19, myTray);
+		return false;
+	}catch(Exception e){
+	}
+	return true;
+}*/
 }

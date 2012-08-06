@@ -2,7 +2,7 @@ package src;
 
 import java.util.LinkedList;
 
-public class Block{
+class Block{
 	int length;
 	int width;
 	int upLCrow;
@@ -36,7 +36,7 @@ public class Block{
     public int hashCode() {
     	int dim = length + width * 10;
     	int coord = upLCrow + upLCcol*10;
-    	return dim ^ coord;
+    	return (dim * (dim + coord) >> 1) ^ (dim * (dim + coord) << 2);
     }
       
     public boolean equals(Object other){

@@ -176,7 +176,7 @@ public class Tray {
 				}
 			}
 		}
-		this.cost += toSet;
+		this.cost = toSet;
 	}
     
     /**
@@ -277,6 +277,14 @@ public class Tray {
 		return true;
 	}
 	
+	public int compress() {
+		int toRtn = 0;
+		for (Block b : blocksOnTray) {
+			toRtn = toRtn*19 + (b.hashCode());
+		}
+		return toRtn;
+	}
+	
 	boolean isOK() {
 		HashMap<Block, Integer> counts = new HashMap<Block, Integer>();
 		for (int m = 0; m < this.lengthOfTray; m++) {
@@ -320,9 +328,11 @@ public class Tray {
 		}
 		for(int i = 0; i < this.lengthOfTray; i++){
 			for(int j = 0; j < this.widthOfTray; j++){
-				if(otherTray.config[i][j]!=null && this.config[i][j]!=null){
-					return otherTray.config[i][j].equals(this.config[i][j]);
-				}else if(otherTray.config[i][j] == null ^ this.config[i][j]==null){
+				if(otherTray.config[i][j] != null && this.config[i][j]!=null){
+					if (!otherTray.config[i][j].equals(this.config[i][j])) {
+						return false;
+					}
+				}else if((otherTray.config[i][j] == null) ^ (this.config[i][j]==null)){
 					return false;
 				}
 			}
