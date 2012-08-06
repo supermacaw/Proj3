@@ -176,7 +176,7 @@ public class Tray {
 				}
 			}
 		}
-		this.cost += toSet;
+		this.cost = toSet;
 	}
     
     /**
@@ -343,8 +343,37 @@ public class Tray {
 		}
 	}
 	
+	public String toString () {
+		String toPrint = "";
+		for (int i = 0; i < this.lengthOfTray; i++) {
+			String currentLine = "\r\n";
+			for (int j = 0; j < this.widthOfTray; j++) {
+				String toAdd = "";
+				if (this.config[i][j] == null) {
+					toAdd = "X   ";
+				}
+				else {
+					toAdd = this.config[i][j].length + "." + this.config[i][j].width + " ";
+				}
+				currentLine += toAdd;
+			}
+			toPrint += currentLine;
+		}
+		return toPrint;
+	}
+	
 	public static void main(String[] args){
-		/*Tray one = new Tray(4,3);
+		/*Tray testPrint = new Tray(4,4);
+		Block oneOne = new Block(1,1);
+		Block twoOne = new Block(2,1);
+		Block oneTwo = new Block(1,2);
+		Block twoTwo = new Block(2,2);
+		testPrint.place(twoTwo, 0, 1);
+		testPrint.place(twoOne, 0, 3);
+		testPrint.place(oneTwo, 3, 0);
+		testPrint.place(oneOne, 3, 3);
+		System.out.println(testPrint);
+		Tray one = new Tray(4,3);
 		Tray two = new Tray(4,3);
 		Block mine = new Block(2,1);
 		one.place(mine, 0, 2);

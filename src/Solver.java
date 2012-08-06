@@ -61,6 +61,7 @@ public class Solver {
 	private void solve() {
         while (!stack.isEmpty()) {
             Tray myTray = stack.pop();
+            System.out.println(myTray);
             if(myTray.isAtGoal(goalBlocks)){
                 for(int i = 0; i < myTray.history.size(); i++){
                     System.out.println(i + " " + myTray.history.get(i));
@@ -89,6 +90,10 @@ public class Solver {
 	                                        + copy1.upLCrow + " "
 	                                        + copy1.upLCcol);
 	                    }
+	                    else {
+	                    	System.out.println("Just jumped to a previous configuration or different moving option");
+	                    	System.out.println("");
+	                    }
 	                    break;
                 	case 1:
                 		//System.out.println("Up " + toMove);
@@ -102,6 +107,10 @@ public class Solver {
 	                                        + copy2.width + " " 
 	                                        + copy2.upLCrow + " " 
 	                                        + copy2.upLCcol);
+	                    }
+	                    else {
+	                    	System.out.println("Just jumped to a previous configuration or different moving option");
+	                    	System.out.println("");
 	                    }
 	                    break;
                 	case 2:
@@ -117,6 +126,10 @@ public class Solver {
 	                                          + copy3.upLCrow + " " 
 	                                          + copy3.upLCcol);
 	                    }
+	                    else {
+	                    	System.out.println("");
+	                    	System.out.println("Just jumped to a previous configuration or different moving option");
+	                    }
 	                    break;
                 	case 3:
                 		//System.out.println("Left " + toMove);
@@ -130,6 +143,10 @@ public class Solver {
 	                                        + copy4.width + " " 
 	                                        + copy4.upLCrow + " " 
 	                                        + copy4.upLCcol);
+	                    }
+	                    else {
+	                    	System.out.println("Just jumped to a previous configuration or different moving option");
+	                    	System.out.println("");
 	                    }
 	                    break;
                 	}
