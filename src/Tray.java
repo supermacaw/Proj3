@@ -165,7 +165,7 @@ public class Tray {
 						toSet += maxOwnage/(GBlen*GBwid)/2;
 					}
 					else { //if a goal cell is not empty and is filled with a matching block, it's very desirable
-						toSet -= maxOwnage/(GBlen*GBwid);
+						toSet -= 2*(maxOwnage/(GBlen*GBwid));
 					}
 				}
 			}
