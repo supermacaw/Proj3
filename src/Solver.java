@@ -19,21 +19,12 @@ public class Solver {
 
 	private void solve() {
 		int step=0;
-		int collisions = 0;
-		int hashCollisions = 0;
 		int count = 0;
-		ArrayList<Integer> hashes = new ArrayList<Integer>(5000);
+		int[] hashes = new int[1000];
         while (!stack.isEmpty()) {
             Tray myTray = stack.pop();
             step+=1;
-            System.out.println(hashCollisions + " " + step + " hash: " + myTray.hashCode() + "size: " + stack.size() + " numMoves : " + myTray.history.size());
-            if(hashes.contains(new Integer(myTray.hashCode()))){
-            	hashCollisions+=1;
-            }
-            else{
-            	hashes.add(new Integer(myTray.hashCode()));
-            }
-
+            System.out.println(seen.size() + " " + step + " hash: " + myTray.hashCode() + "size: " + stack.size() + " numMoves : " + myTray.history.size());
             if(myTray.isAtGoal(goalBlocks)){
                 for(int i = 0; i < myTray.history.size(); i++){
                     System.out.println(i + " " + myTray.history.get(i));
@@ -57,7 +48,7 @@ public class Solver {
 	                    Block copy1 = one.config[rCoor][cCoor];
 	                    one.move(copy1, rCoor + 1, cCoor);
 	                    one.calculateCost(goalBlocks);
-	                    if(!seen.contains(one)) {
+	                    if(!seen.contains(one)&& one.history.size() < 4000) {
 	                        this.stack.push(one);
 	                        one.history.add(copy1.length + " " 
 	                                        + copy1.width + " "
@@ -75,7 +66,7 @@ public class Solver {
 	                    Block copy2 = two.config[rCoor][cCoor];
 	                    two.move(copy2, rCoor-1, cCoor);
 	                    two.calculateCost(goalBlocks);
-	                    if(!seen.contains(two)){	
+	                    if(!seen.contains(two)&& two.history.size() < 4000){	
 	                        this.stack.push(two);
 	                        two.history.add(copy2.length + " "
 	                                        + copy2.width + " " 
@@ -93,7 +84,7 @@ public class Solver {
 	                    Block copy3 = three.config[rCoor][cCoor];
 	                    three.move(copy3, rCoor, cCoor + 1);
 	                    three.calculateCost(goalBlocks);
-	                    if(!seen.contains(three)){	
+	                    if(!seen.contains(three)&& three.history.size() < 4000){	
 	                        this.stack.push(three);
 	                        three.history.add(copy3.length + " " 
 	                                          + copy3.width + " " 
@@ -111,7 +102,7 @@ public class Solver {
 	                    Block copy4 = four.config[rCoor][cCoor];
 	                    four.move(copy4, rCoor, cCoor - 1);
 	                    four.calculateCost(goalBlocks);
-	                    if(!seen.contains(four)){
+	                    if(!seen.contains(four) && four.history.size() < 4000){
 	                        this.stack.push(four);
 	                        four.history.add(copy4.length + " " 
 	                                        + copy4.width + " " 
