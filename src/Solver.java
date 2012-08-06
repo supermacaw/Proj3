@@ -16,52 +16,12 @@ public class Solver {
 		seen = new HashSet<Tray>();
         stack = new LinkedList<Tray> (); //Make this sorted by cost.
 	}
-	
-/*	private int getDir(Block blockToCheck, int row, int col, Tray myTray){
-		if(!myTray.inBounds(row, col)){
-			throw new IllegalArgumentException();
-		}
-		else if(blockToCheck.upLCrow < row){
-			return 0;
-		}else if(blockToCheck.upLCrow > row){
-			return 1;
-		}else if(blockToCheck.upLCcol < col){
-			return 2;
-		}else if(blockToCheck.upLCcol > col){
-			return 3;
-		}else if(blockToCheck.upLCrow == row && blockToCheck.upLCcol == col){
-			return -1;
-		}else{
-			throw new IllegalArgumentException();
-		}
-	}
-	
-	public boolean getDirWorks(){
-		Tray myTray = new Tray(5,5);
-		Block myBlock = new Block(2,2);
-		myTray.place(myBlock, 2, 2);
-		if(getDir(myBlock, 0, 0, myTray)!=1){
-			return false;
-		}if(getDir(myBlock, 3, 0, myTray)!=0){
-			return false;
-		}if(getDir(myBlock, 2, 0, myTray)!=3){
-			return false;
-		}if(getDir(myBlock, 2, 4, myTray)!=2){
-			return false;
-		}if(getDir(myBlock, 2, 2, myTray)!=(-1)){
-			return false;
-		}try{
-			getDir(myBlock, 19, 19, myTray);
-			return false;
-		}catch(Exception e){
-		}
-		return true;
-	}*/
 
 	private void solve() {
 		int step=0;
 		int collisions = 0;
 		int hashCollisions = 0;
+		int count = 0;
 		ArrayList<Integer> hashes = new ArrayList<Integer>(5000);
         while (!stack.isEmpty()) {
             Tray myTray = stack.pop();
@@ -73,10 +33,13 @@ public class Solver {
             else{
             	hashes.add(new Integer(myTray.hashCode()));
             }
+
             if(myTray.isAtGoal(goalBlocks)){
                 for(int i = 0; i < myTray.history.size(); i++){
                     System.out.println(i + " " + myTray.history.get(i));
+                    count += 1;
                 }
+                System.out.print(count);
                 System.exit(0);
                 return;
             }
@@ -101,6 +64,10 @@ public class Solver {
 	                                        + copy1.upLCrow + " "
 	                                        + copy1.upLCcol);
 	                    }
+	                    else {
+	                    	System.out.println("Just jumped to a previous configuration or different moving option");
+	                    	System.out.println("");
+	                    }
 	                    break;
                 	case 1:
                 		//System.out.println("Up " + toMove);
@@ -114,6 +81,10 @@ public class Solver {
 	                                        + copy2.width + " " 
 	                                        + copy2.upLCrow + " " 
 	                                        + copy2.upLCcol);
+	                    }
+	                    else {
+	                    	System.out.println("Just jumped to a previous configuration or different moving option");
+	                    	System.out.println("");
 	                    }
 	                    break;
                 	case 2:
@@ -129,6 +100,10 @@ public class Solver {
 	                                          + copy3.upLCrow + " " 
 	                                          + copy3.upLCcol);
 	                    }
+	                    else {
+	                    	System.out.println("");
+	                    	System.out.println("Just jumped to a previous configuration or different moving option");
+	                    }
 	                    break;
                 	case 3:
                 		//System.out.println("Left " + toMove);
@@ -142,6 +117,10 @@ public class Solver {
 	                                        + copy4.width + " " 
 	                                        + copy4.upLCrow + " " 
 	                                        + copy4.upLCcol);
+	                    }
+	                    else {
+	                    	System.out.println("Just jumped to a previous configuration or different moving option");
+	                    	System.out.println("");
 	                    }
 	                    break;
                 	}
@@ -203,6 +182,7 @@ public class Solver {
         int index = 0;
         for (Tray comp : stack) {
             if (t.compareTo(comp) == -1) {
+            	System.out.println("got here");
                 continue;
             } else if (t.compareTo(comp) >= 0) {
                 stack.add(index, t);
@@ -265,4 +245,45 @@ public class Solver {
 		}
 		return toRtn;
 	}
+	
+	/*	private int getDir(Block blockToCheck, int row, int col, Tray myTray){
+	if(!myTray.inBounds(row, col)){
+		throw new IllegalArgumentException();
+	}
+	else if(blockToCheck.upLCrow < row){
+		return 0;
+	}else if(blockToCheck.upLCrow > row){
+		return 1;
+	}else if(blockToCheck.upLCcol < col){
+		return 2;
+	}else if(blockToCheck.upLCcol > col){
+		return 3;
+	}else if(blockToCheck.upLCrow == row && blockToCheck.upLCcol == col){
+		return -1;
+	}else{
+		throw new IllegalArgumentException();
+	}
+}
+
+public boolean getDirWorks(){
+	Tray myTray = new Tray(5,5);
+	Block myBlock = new Block(2,2);
+	myTray.place(myBlock, 2, 2);
+	if(getDir(myBlock, 0, 0, myTray)!=1){
+		return false;
+	}if(getDir(myBlock, 3, 0, myTray)!=0){
+		return false;
+	}if(getDir(myBlock, 2, 0, myTray)!=3){
+		return false;
+	}if(getDir(myBlock, 2, 4, myTray)!=2){
+		return false;
+	}if(getDir(myBlock, 2, 2, myTray)!=(-1)){
+		return false;
+	}try{
+		getDir(myBlock, 19, 19, myTray);
+		return false;
+	}catch(Exception e){
+	}
+	return true;
+}*/
 }
