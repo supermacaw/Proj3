@@ -321,7 +321,9 @@ public class Tray {
 		for(int i = 0; i < this.lengthOfTray; i++){
 			for(int j = 0; j < this.widthOfTray; j++){
 				if(otherTray.config[i][j]!=null && this.config[i][j]!=null){
-					return otherTray.config[i][j].equals(this.config[i][j]);
+					if(!otherTray.config[i][j].equals(this.config[i][j])){
+						return false;
+					}
 				}else if(otherTray.config[i][j] == null ^ this.config[i][j]==null){
 					return false;
 				}
