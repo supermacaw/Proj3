@@ -28,7 +28,7 @@ public class Solver {
             //System.out.println("last " + stack.getLast().cost);
             Tray myTray = stack.pop();
             //System.out.println(myTray.cost);
-            step+=1;
+            /*step+=1;
 	            System.out.println("hashset size: " + seen.size() + " collisions: " + hashCollisions + " " + step + " hash: " + myTray.hashCode() + " size: " + stack.size() + " numMoves : " + myTray.history.size());
 	            System.out.println(myTray);
 	            if(hashes.contains(new Integer(myTray.hashCode()))){
@@ -37,6 +37,7 @@ public class Solver {
 	            else{
 	            	hashes.add(new Integer(myTray.hashCode()));
 	            }
+	            */
 	            
             //System.out.println(stack.size());
             if(myTray.isAtGoal(goalBlocks)){
@@ -47,7 +48,7 @@ public class Solver {
             	return;
             }
             myTray.populateNextMoves(goalBlocks);
-            seen.add(myTray);
+            //seen.add(myTray);
             for (Block toMove: myTray.nextMoves){
             	decideMove(toMove, myTray);
                 int rCoor = toMove.upLCrow;
@@ -67,10 +68,6 @@ public class Solver {
 	                                        + copy1.upLCrow + " "
 	                                        + copy1.upLCcol);
 	                    }
-	                    /*else {
-	                    	System.out.println("Just jumped to a previous configuration or different moving option");
-	                    	System.out.println("");
-	                    }*/
 	                    break;
                 	case 1:
                 		//System.out.println("Up " + toMove);
@@ -85,10 +82,6 @@ public class Solver {
 	                                        + copy2.upLCrow + " " 
 	                                        + copy2.upLCcol);
 	                    }
-	                    /*else {
-	                    	System.out.println("Just jumped to a previous configuration or different moving option");
-	                    	System.out.println("");
-	                    }*/
 	                    break;
                 	case 2:
                 	  	//System.out.println("Right " + toMove);
@@ -103,10 +96,6 @@ public class Solver {
 	                                          + copy3.upLCrow + " " 
 	                                          + copy3.upLCcol);
 	                    }
-	                    /*else {
-	                    	System.out.println("");
-	                    	System.out.println("Just jumped to a previous configuration or different moving option");
-	                    }*/
 	                    break;
                 	case 3:
                 		//System.out.println("Left " + toMove);
@@ -121,93 +110,9 @@ public class Solver {
 	                                        + copy4.upLCrow + " " 
 	                                        + copy4.upLCcol);
 	                    }
-	                    /*else {
-	                    	System.out.println("Just jumped to a previous configuration or different moving option");
-	                    	System.out.println("");
-	                    }*/
 	                    break;
                 	}
                 }
-            	for (Integer i : toMove.directions) {
-            		switch (i) {
-            		case 0: 
-            			//System.out.println("Down " + toMove);
-            			Tray one = new Tray(myTray);
-            			Block copy1 = one.config[rCoor][cCoor];
-            			one.move(copy1, rCoor + 1, cCoor);
-            			one.calculateCost(goalBlocks);
-            			if(!seen.contains(one)) {
-            				this.push(one);
-            				seen.add(one);
-            				one.history.add(copy1.length + " " 
-            						+ copy1.width + " "
-            						+ copy1.upLCrow + " "
-            						+ copy1.upLCcol);
-            			}
-            			else {
-            				//System.out.println("Just jumped to a previous configuration or different moving option");
-            				//System.out.println("");
-            			}
-            			break;
-            		case 1:
-            			//System.out.println("Up " + toMove);
-            			Tray two = new Tray(myTray);
-            			Block copy2 = two.config[rCoor][cCoor];
-            			two.move(copy2, rCoor-1, cCoor);
-            			two.calculateCost(goalBlocks);
-            			if(!seen.contains(two)){	
-            				this.push(two);
-            				seen.add(two);
-            				two.history.add(copy2.length + " "
-            						+ copy2.width + " " 
-            						+ copy2.upLCrow + " " 
-            						+ copy2.upLCcol);
-            			}
-            			else {
-            				//System.out.println("Just jumped to a previous configuration or different moving option");
-            				//System.out.println("");
-            			}
-            			break;
-            		case 2:
-            			//System.out.println("Right " + toMove);
-            			Tray three = new Tray(myTray);
-            			Block copy3 = three.config[rCoor][cCoor];
-            			three.move(copy3, rCoor, cCoor + 1);
-            			three.calculateCost(goalBlocks);
-            			if(!seen.contains(three)){	
-            				this.push(three);
-            				seen.add(three);
-            				three.history.add(copy3.length + " " 
-            						+ copy3.width + " " 
-            						+ copy3.upLCrow + " " 
-            						+ copy3.upLCcol);
-            			}
-            			else {
-            				//System.out.println("");
-            				//System.out.println("Just jumped to a previous configuration or different moving option");
-            			}
-            			break;
-            		case 3:
-            			//System.out.println("Left " + toMove);
-            			Tray four = new Tray(myTray);
-            			Block copy4 = four.config[rCoor][cCoor];
-            			four.move(copy4, rCoor, cCoor - 1);
-            			four.calculateCost(goalBlocks);
-            			if(!seen.contains(four)){
-            				this.push(four);
-            				seen.add(four);
-            				four.history.add(copy4.length + " " 
-            						+ copy4.width + " " 
-            						+ copy4.upLCrow + " " 
-            						+ copy4.upLCcol);
-            			}
-            			else {
-            				//System.out.println("Just jumped to a previous configuration or different moving option");
-            				//System.out.println("");
-            			}
-            			break;
-            		}
-            	}
             }
         }
         System.out.println("got here :(");
