@@ -7,8 +7,8 @@ public class Tray {
 	 int lengthOfTray;
 	 int widthOfTray;
      Block [][] config;
-    // ArrayList<Block> blocksOnTray = new ArrayList<Block>();
-     HashSet<Block> blocksOnTray;
+     ArrayList<Block> blocksOnTray = new ArrayList<Block>();
+     //HashSet<Block> blocksOnTray;
      LinkedList<Block> nextMoves;
      ArrayList<String> history;
      int cost;
@@ -17,7 +17,7 @@ public class Tray {
 		this.lengthOfTray = rows;
 		this.widthOfTray = cols;
         this.config = new Block[rows][cols];
-        this.blocksOnTray = new HashSet<Block> ();
+        this.blocksOnTray = new ArrayList<Block> ();
         this.history = new ArrayList<String> ();
         this.cost = 1000000000;
 	}
@@ -27,11 +27,10 @@ public class Tray {
 		this.widthOfTray = otherTray.widthOfTray;
         this.config = new Block[otherTray.lengthOfTray][otherTray.widthOfTray];
         this.history = new ArrayList<String> (otherTray.history);
-        this.blocksOnTray = new HashSet<Block> ();
+        this.blocksOnTray = new ArrayList<Block> ();
         this.cost = 100000000;
-        Iterator<Block> i = otherTray.blocksOnTray.iterator();
-		while (i.hasNext()) {
-			Block temp = new Block(i.next());
+		for (Block b: otherTray.blocksOnTray) {
+			Block temp = new Block(b);
 			this.place(temp, temp.upLCrow, temp.upLCcol);
 		}
 	}
@@ -53,16 +52,6 @@ public class Tray {
 	public void populateNextMoves(ArrayList<Block> goalBlocks) {
         this.nextMoves = this.emptyCoordsAdjBlocks(goalBlocks);
 	}
-
-    public void remove (Block toRemove) {
-        int row = toRemove.upLCrow;
-        int col = toRemove.upLCcol;
-        for (int i = row ; i < row + toRemove.length ; i++) {
-            for (int j = col ; j < col + toRemove.width ; j++) {
-                config[i][j] = null;
-            }
-        }
-    }
 	
 	/**
 	 * Moves a given block from its given position on the board to a new position if possible.
@@ -76,12 +65,30 @@ public class Tray {
 	 */
 	public void move (Block blockToMove, int row, int col) { // can make this more efficient
 		this.remove(blockToMove);
-		blocksOnTray.remove(blockToMove);
-		this.place(blockToMove, row, col);
+		//blocksOnTray.remove(blockToMove);
+		//this.place(blockToMove, row, col);
+		for (int i = row; i < row + blockToMove.length; i++){
+			for(int j = col; j < col + blockToMove.width; j++){
+				if(this.config[i][j] != null){
+					throw new IllegalArgumentException("Conflict in tray reconfiguration, already occupied position at (r,c) = (" + row + "," + col + ")");
+				}
+				this.config[i][j] = blockToMove;
+			}
+		}
 		blockToMove.upLCrow = row;
 		blockToMove.upLCcol = col;
-		blocksOnTray.add(blockToMove); //check hashCode?
+		//blocksOnTray.add(blockToMove); //check hashCode?
 	}
+
+    public void remove (Block toRemove) {
+        int row = toRemove.upLCrow;
+        int col = toRemove.upLCcol;
+        for (int i = row ; i < row + toRemove.length ; i++) {
+            for (int j = col ; j < col + toRemove.width ; j++) {
+                config[i][j] = null;
+            }
+        }
+    }
 
 	private void addAdjBlocks(LinkedList<Block>result, int i, int j, int dir, ArrayList<Block> goalBlocks){
 		if(!this.inBounds(i, j)){
@@ -263,13 +270,6 @@ public class Tray {
                 && row < lengthOfTray
                 && col < widthOfTray;
     }
-
-    /* This is just a temporary hack for main() */
-    public HashSet<Block> getBlocks() {
-        return blocksOnTray;
-    }
-	
-	
 	
 	//check last moved block?... i feel like there's a better way of doing this
 	public boolean isAtGoal(ArrayList<Block> goalBlocks){
@@ -313,12 +313,12 @@ public class Tray {
 	}
 	
 	public int hashCode(){
-		int toRtn = 1;
+		String hashed = new String();
 		Iterator<Block> i = blocksOnTray.iterator();
 		while (i.hasNext()) {
-		     toRtn = 31*toRtn + i.next().repr(); 
+		     hashed += i.next().hashHelper(); 
 		}
-		return toRtn;
+		return hashed.hashCode();
 	}
 	
 	public boolean equals(Object other){

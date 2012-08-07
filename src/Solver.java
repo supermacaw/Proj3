@@ -19,28 +19,27 @@ public class Solver {
 	}
 
 	private void solve() {
-		/*int step=1;
-		int collisions = 0;
-		int hashCollisions = 0;
-		HashSet<Integer> hashes = new HashSet<Integer>();
-		*/
-		
+		//int step=1;
+		//int collisions = 0;
+		//int hashCollisions = 0;
+		//HashSet<Integer> hashes = new HashSet<Integer>();
         while (!stack.isEmpty()) {
             //System.out.println("last " + stack.getLast().cost);
             Tray myTray = stack.pop();
             //System.out.println(myTray.cost);
-            /*step+=1;
-	            System.out.println("hashset size: " + seen.size() + " collisions: " + hashCollisions + " " + step + " hash: " + myTray.hashCode() + " size: " + stack.size() + " numMoves : " + myTray.history.size());
-	            System.out.println(myTray);
-	            if(hashes.contains(new Integer(myTray.hashCode()))){
-	            	hashCollisions+=1;
-	            }
-	            else{
-	            	hashes.add(new Integer(myTray.hashCode()));
-	            }
-	           */ 
+            //step+=1;
+	            //System.out.println("hashset size: " + seen.size() + " collisions: " + hashCollisions + " " + step + " hash: " + myTray.hashCode() + " size: " + stack.size() + " numMoves : " + myTray.history.size());
+	            //System.out.println(myTray.blocksOnTray);
+	            //System.out.println(myTray);
+	            //if(hashes.contains(new Integer(myTray.hashCode()))){
+	            //	hashCollisions+=1;
+	            //}
+	            //else{
+	            //	hashes.add(new Integer(myTray.hashCode()));
+	            //}
+	            
 	           
-            System.out.println(stack.size());
+            //System.out.println(stack.size());
             if(myTray.isAtGoal(goalBlocks)){
             	for(int i = 0; i < myTray.history.size(); i++){
             		System.out.println(i + " " + myTray.history.get(i));
