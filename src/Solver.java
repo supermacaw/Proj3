@@ -47,7 +47,6 @@ public class Solver {
             	return;
             }
             myTray.populateNextMoves();
-            seen.add(myTray);
             for (Block toMove: myTray.nextMoves){
             	decideMove(toMove, myTray);
             	int rCoor = toMove.upLCrow;
@@ -61,6 +60,7 @@ public class Solver {
             			one.move(copy1, rCoor + 1, cCoor);
             			one.calculateCost(goalBlocks);
             			if(!seen.contains(one)) {
+            				seen.add(one);
             				this.push(one);
             				seen.add(one);
             				one.history.add(copy1.length + " " 
@@ -80,6 +80,7 @@ public class Solver {
             			two.move(copy2, rCoor-1, cCoor);
             			two.calculateCost(goalBlocks);
             			if(!seen.contains(two)){	
+            				seen.add(two);
             				this.push(two);
             				seen.add(two);
             				two.history.add(copy2.length + " "
@@ -99,6 +100,7 @@ public class Solver {
             			three.move(copy3, rCoor, cCoor + 1);
             			three.calculateCost(goalBlocks);
             			if(!seen.contains(three)){	
+            				seen.add(three);
             				this.push(three);
             				seen.add(three);
             				three.history.add(copy3.length + " " 
@@ -118,6 +120,7 @@ public class Solver {
             			four.move(copy4, rCoor, cCoor - 1);
             			four.calculateCost(goalBlocks);
             			if(!seen.contains(four)){
+            				seen.add(four);
             				this.push(four);
             				seen.add(four);
             				four.history.add(copy4.length + " " 
@@ -231,6 +234,7 @@ public class Solver {
 		}
 		t.populateNextMoves();
 		s.push(t);
+		s.seen.add(t);
 		s.solve();
 	}
 
