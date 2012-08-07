@@ -313,13 +313,12 @@ public class Tray {
 	}
 	
 	public int hashCode(){
-		int hashCode = 1;
+		String hash = new String();
 		Iterator<Block> i = blocksOnTray.iterator();
 		while (i.hasNext()) {
-		      Block x = i.next();
-		      hashCode = 31*hashCode + (x==null ? 0 : x.hashCode());
+		     hash += i.next().hashHelper(); 
 		}
-		return hashCode;
+		return hash.hashCode();
 	}
 	
 	public boolean equals(Object other){ //can consolidate this

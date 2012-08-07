@@ -34,21 +34,21 @@ class Block{
         priority = true;
     }
     
+    public String hashHelper(){
+    	String row = (new Integer(upLCrow)).toString();
+    	String col = (new Integer(upLCcol)).toString();
+    	String sLength = (new Integer(length)).toString();
+    	String sWidth = (new Integer(width)).toString();
+    	return "r " + row + " c " +col + " l " + sLength + " w " + sWidth;
+    }
+    
     public int hashCode() {
-    	int dim = length + (width * width);
-    	int coord = upLCrow + (upLCcol*upLCcol);
-    	return dim ^ coord;
-    	/*int hashCode = 1;
-    	ArrayList<Integer> holder = new ArrayList<Integer>(4);
-    	holder.add(new Integer(upLCrow));
-    	holder.add(new Integer(upLCcol));
-    	holder.add(new Integer(length));
-    	holder.add(new Integer(width));
-    	for(int i = 0; i < 4; i++) {
-		      Integer x = holder.get(i);
-		      hashCode = 31*hashCode + (x==null ? 0 : x.hashCode());
-		}
-    	return hashCode;*/
+    	String row = (new Integer(upLCrow)).toString();
+    	String col = (new Integer(upLCcol)).toString();
+    	String sLength = (new Integer(length)).toString();
+    	String sWidth = (new Integer(width)).toString();
+    	String blockString = ("row " + row + " col " +col + " length " + sLength + " width " + sWidth);
+    	return blockString.hashCode();
     }
       
     public boolean equals(Object other){

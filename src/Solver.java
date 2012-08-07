@@ -51,68 +51,92 @@ public class Solver {
             //seen.add(myTray);
             for (Block toMove: myTray.nextMoves){
             	decideMove(toMove, myTray);
-                int rCoor = toMove.upLCrow;
-                int cCoor = toMove.upLCcol;
-                for (Integer i : toMove.directions) {
-                	switch (i) {
-                	case 0: 
-                		//System.out.println("Down " + toMove);
-	                	Tray one = new Tray(myTray);
-	                    Block copy1 = one.config[rCoor][cCoor];
-	                    one.move(copy1, rCoor + 1, cCoor);
-	                    one.calculateCost(goalBlocks);
-	                    if(!seen.contains(one)) {
-	                        this.push(one);
-	                        one.history.add(copy1.length + " " 
-	                                        + copy1.width + " "
-	                                        + copy1.upLCrow + " "
-	                                        + copy1.upLCcol);
-	                    }
-	                    break;
-                	case 1:
-                		//System.out.println("Up " + toMove);
-	                    Tray two = new Tray(myTray);
-	                    Block copy2 = two.config[rCoor][cCoor];
-	                    two.move(copy2, rCoor-1, cCoor);
-	                    two.calculateCost(goalBlocks);
-	                    if(!seen.contains(two)){	
-	                        this.push(two);
-	                        two.history.add(copy2.length + " "
-	                                        + copy2.width + " " 
-	                                        + copy2.upLCrow + " " 
-	                                        + copy2.upLCcol);
-	                    }
-	                    break;
-                	case 2:
-                	  	//System.out.println("Right " + toMove);
-	                    Tray three = new Tray(myTray);
-	                    Block copy3 = three.config[rCoor][cCoor];
-	                    three.move(copy3, rCoor, cCoor + 1);
-	                    three.calculateCost(goalBlocks);
-	                    if(!seen.contains(three)){	
-	                        this.push(three);
-	                        three.history.add(copy3.length + " " 
-	                                          + copy3.width + " " 
-	                                          + copy3.upLCrow + " " 
-	                                          + copy3.upLCcol);
-	                    }
-	                    break;
-                	case 3:
-                		//System.out.println("Left " + toMove);
-	                    Tray four = new Tray(myTray);
-	                    Block copy4 = four.config[rCoor][cCoor];
-	                    four.move(copy4, rCoor, cCoor - 1);
-	                    four.calculateCost(goalBlocks);
-	                    if(!seen.contains(four)){
-	                        this.push(four);
-	                        four.history.add(copy4.length + " " 
-	                                        + copy4.width + " " 
-	                                        + copy4.upLCrow + " " 
-	                                        + copy4.upLCcol);
-	                    }
-	                    break;
-                	}
-                }
+            	int rCoor = toMove.upLCrow;
+            	int cCoor = toMove.upLCcol;
+            	for (Integer i : toMove.directions) {
+            		switch (i) {
+            		case 0: 
+            			//System.out.println("Down " + toMove);
+            			Tray one = new Tray(myTray);
+            			Block copy1 = one.config[rCoor][cCoor];
+            			one.move(copy1, rCoor + 1, cCoor);
+            			one.calculateCost(goalBlocks);
+            			if(!seen.contains(one)) {
+            				seen.add(one);
+            				this.push(one);
+            				seen.add(one);
+            				one.history.add(copy1.length + " " 
+            						+ copy1.width + " "
+            						+ copy1.upLCrow + " "
+            						+ copy1.upLCcol);
+            			}
+            			else {
+            				//System.out.println("Just jumped to a previous configuration or different moving option");
+            				//System.out.println("");
+            			}
+            			break;
+            		case 1:
+            			//System.out.println("Up " + toMove);
+            			Tray two = new Tray(myTray);
+            			Block copy2 = two.config[rCoor][cCoor];
+            			two.move(copy2, rCoor-1, cCoor);
+            			two.calculateCost(goalBlocks);
+            			if(!seen.contains(two)){	
+            				seen.add(two);
+            				this.push(two);
+            				seen.add(two);
+            				two.history.add(copy2.length + " "
+            						+ copy2.width + " " 
+            						+ copy2.upLCrow + " " 
+            						+ copy2.upLCcol);
+            			}
+            			else {
+            				//System.out.println("Just jumped to a previous configuration or different moving option");
+            				//System.out.println("");
+            			}
+            			break;
+            		case 2:
+            			//System.out.println("Right " + toMove);
+            			Tray three = new Tray(myTray);
+            			Block copy3 = three.config[rCoor][cCoor];
+            			three.move(copy3, rCoor, cCoor + 1);
+            			three.calculateCost(goalBlocks);
+            			if(!seen.contains(three)){	
+            				seen.add(three);
+            				this.push(three);
+            				seen.add(three);
+            				three.history.add(copy3.length + " " 
+            						+ copy3.width + " " 
+            						+ copy3.upLCrow + " " 
+            						+ copy3.upLCcol);
+            			}
+            			else {
+            				//System.out.println("");
+            				//System.out.println("Just jumped to a previous configuration or different moving option");
+            			}
+            			break;
+            		case 3:
+            			//System.out.println("Left " + toMove);
+            			Tray four = new Tray(myTray);
+            			Block copy4 = four.config[rCoor][cCoor];
+            			four.move(copy4, rCoor, cCoor - 1);
+            			four.calculateCost(goalBlocks);
+            			if(!seen.contains(four)){
+            				seen.add(four);
+            				this.push(four);
+            				seen.add(four);
+            				four.history.add(copy4.length + " " 
+            						+ copy4.width + " " 
+            						+ copy4.upLCrow + " " 
+            						+ copy4.upLCcol);
+            			}
+            			else {
+            				//System.out.println("Just jumped to a previous configuration or different moving option");
+            				//System.out.println("");
+            			}
+            			break;
+            		}
+            	}
             }
         }
         System.out.println("got here :(");
@@ -214,6 +238,7 @@ public class Solver {
 		}
 		t.populateNextMoves(s.goalBlocks);
 		s.push(t);
+		s.seen.add(t);
 		s.solve();
 	}
 
