@@ -313,15 +313,15 @@ public class Tray {
 	}
 	
 	public int hashCode(){
-		String hash = new String();
+		int toRtn = 1;
 		Iterator<Block> i = blocksOnTray.iterator();
 		while (i.hasNext()) {
-		     hash += i.next().hashHelper(); 
+		     toRtn = 31*toRtn + i.next().repr(); 
 		}
-		return hash.hashCode();
+		return toRtn;
 	}
 	
-	public boolean equals(Object other){ //can consolidate this
+	public boolean equals(Object other){
 		Tray otherTray;
 		try{
 			otherTray = (Tray) other;

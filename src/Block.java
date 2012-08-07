@@ -42,6 +42,11 @@ class Block{
     	return "r " + row + " c " +col + " l " + sLength + " w " + sWidth;
     }
     
+    public int repr() {
+    	String sL = (new Integer(length)).toString();
+    	String sW = (new Integer(width)).toString();
+    	return (sL + sW).hashCode();
+    }
     public int hashCode() {
     	String row = (new Integer(upLCrow)).toString();
     	String col = (new Integer(upLCcol)).toString();
@@ -62,6 +67,17 @@ class Block{
     			&& width == otherB.width
     			&& upLCrow == otherB.upLCrow
     			&& upLCcol == otherB.upLCcol);
+    }
+    
+    public boolean equalsSize(Object other){
+    	Block otherB = null;
+    	try{
+    		otherB = (Block) other;
+    	}catch (Exception e){
+    		return false;
+    	}
+    	return (length == otherB.length 
+    			&& width == otherB.width);
     }
 
     public boolean isPriority() {
@@ -84,14 +100,14 @@ class Block{
     }
 
     public static void main(String[] args) {
-    	/*Block test = new Block(1,1);
+    	Block test = new Block(4,1);
     	test.upLCrow = 0;
     	test.upLCcol = 1;
     	Block test2 = new Block(1,1);
     	test2.upLCrow = 1;
     	test2.upLCcol = 0;
-    	System.out.println(test.hashCode() == test2.hashCode());
-    	System.out.println(test.equals(test2));*/
+    	System.out.println(test.repr());
+    	System.out.println(test.equals(test2));
 
     }
 }

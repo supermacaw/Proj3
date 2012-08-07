@@ -19,12 +19,13 @@ public class Solver {
 	}
 
 	private void solve() {
-		int step=1;
+		/*int step=1;
 		int collisions = 0;
 		int hashCollisions = 0;
 		HashSet<Integer> hashes = new HashSet<Integer>();
+		*/
 		
-        while (!stack.isEmpty() && step < 300) {
+        while (!stack.isEmpty()) {
             //System.out.println("last " + stack.getLast().cost);
             Tray myTray = stack.pop();
             //System.out.println(myTray.cost);
@@ -37,9 +38,9 @@ public class Solver {
 	            else{
 	            	hashes.add(new Integer(myTray.hashCode()));
 	            }
-	            */
-	            
-            //System.out.println(stack.size());
+	           */ 
+	           
+            System.out.println(stack.size());
             if(myTray.isAtGoal(goalBlocks)){
             	for(int i = 0; i < myTray.history.size(); i++){
             		System.out.println(i + " " + myTray.history.get(i));
@@ -64,15 +65,10 @@ public class Solver {
             			if(!seen.contains(one)) {
             				seen.add(one);
             				this.push(one);
-            				seen.add(one);
             				one.history.add(copy1.length + " " 
             						+ copy1.width + " "
             						+ copy1.upLCrow + " "
             						+ copy1.upLCcol);
-            			}
-            			else {
-            				//System.out.println("Just jumped to a previous configuration or different moving option");
-            				//System.out.println("");
             			}
             			break;
             		case 1:
@@ -84,15 +80,10 @@ public class Solver {
             			if(!seen.contains(two)){	
             				seen.add(two);
             				this.push(two);
-            				seen.add(two);
             				two.history.add(copy2.length + " "
             						+ copy2.width + " " 
             						+ copy2.upLCrow + " " 
             						+ copy2.upLCcol);
-            			}
-            			else {
-            				//System.out.println("Just jumped to a previous configuration or different moving option");
-            				//System.out.println("");
             			}
             			break;
             		case 2:
@@ -104,15 +95,10 @@ public class Solver {
             			if(!seen.contains(three)){	
             				seen.add(three);
             				this.push(three);
-            				seen.add(three);
             				three.history.add(copy3.length + " " 
             						+ copy3.width + " " 
             						+ copy3.upLCrow + " " 
             						+ copy3.upLCcol);
-            			}
-            			else {
-            				//System.out.println("");
-            				//System.out.println("Just jumped to a previous configuration or different moving option");
             			}
             			break;
             		case 3:
@@ -124,15 +110,10 @@ public class Solver {
             			if(!seen.contains(four)){
             				seen.add(four);
             				this.push(four);
-            				seen.add(four);
             				four.history.add(copy4.length + " " 
             						+ copy4.width + " " 
             						+ copy4.upLCrow + " " 
             						+ copy4.upLCcol);
-            			}
-            			else {
-            				//System.out.println("Just jumped to a previous configuration or different moving option");
-            				//System.out.println("");
             			}
             			break;
             		}
